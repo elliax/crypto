@@ -1,0 +1,34 @@
+#root {
+  background-color: #282c34;
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
+
+.Table {
+  margin-left: 5vw !important;
+  width: 90vw !important;
+}
+
+.header {
+  min-width: 100vw;
+  height: 10vw;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.header .Menu {
+  border-bottom: solid black 1px;
+}
+
+.header .Menu a {
+  color: #09d3ac;
+  margin: auto 10px 10px 10px;
+}
+/*# sourceMappingURL=style.css.map */
