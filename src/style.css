@@ -17,18 +17,45 @@
 }
 
 .header {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-width: 100vw;
-  height: 10vw;
+  height: 8vh;
   margin: auto;
   font-size: 1.5em;
-}
-
-.header .Menu {
   border-bottom: solid black 1px;
 }
 
-.header .Menu a {
+.header h1 {
+  float: left;
+  margin: 10px auto 10px 30px;
+}
+
+.header .Menu {
+  margin-right: 20px;
+}
+
+.header .Menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+}
+
+.header .Menu li {
   color: #09d3ac;
-  margin: auto 10px 10px 10px;
+  margin: auto 25px 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */

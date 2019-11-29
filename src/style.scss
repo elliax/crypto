@@ -3,6 +3,7 @@
     color: #ffffff;
     min-height: 100vh;
     margin: 0;
+    
   }
   
   .App {
@@ -15,16 +16,31 @@
       width: 90vw !important;
   }
   .header {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 100vw;
-    height: 10vw;
+    height: 8vh;
     margin: auto;
     font-size: 1.5em;
+    border-bottom: solid black 1px;
+    
 
+    h1 {
+        float: left;
+        margin: 10px auto 10px 30px; 
+    }
     .Menu {
-        border-bottom: solid black 1px;
-        a {
+        margin-right: 20px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        li {
             color: #09d3ac;
-            margin: auto 10px 10px 10px;
+            margin: auto 25px 10px 10px;
         }
     }
   }

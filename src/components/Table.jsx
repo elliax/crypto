@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 class Table extends Component {
-    state = {  }
+    state = { 
+        
+     }
     render() { 
         let allCurrency = this.props.allCurrency;
         return (

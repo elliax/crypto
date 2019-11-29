@@ -1,17 +1,29 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom';
 class Menu extends Component {
     state = {  }
     render() { 
         return (
             <div className="header">
-            <h1>CryptoMate</h1> 
+            <Link to='/'>
+                <h1>CryptoMate</h1>
+            </Link>
                 <div className="Menu">
                     
-                    <a href="#">Learn more</a>
-                    <a href="#">Your coins</a>
-                    <a href="#">Chosen coins</a>
-                    <a href="#">Comparison</a>
+                    <ul>
+                        <Link to='/about'>
+                            <li>About</li>
+                        </Link>
+                        <Link to='/table'>
+                            <li>Table</li>
+                        </Link>
+                        <Link to='/about'>
+                            <li>About</li>
+                        </Link>
+                        <Link to='/about'>
+                            <li>About</li>
+                        </Link>
+                    </ul>
                     
                 </div>
             </div>

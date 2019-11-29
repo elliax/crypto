@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Table from "./components/Table";
 import Menu from "./components/Menu";
 import './style.css';
+import About from './components/About';
+import Home from './components/Home';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class App extends Component {
   state = { 
@@ -22,11 +25,19 @@ class App extends Component {
 
   render() { 
     return (
-      <div className="App">
-        <Menu/>
-        <Table 
-      allCurrency={this.state.cryptoData} />
-      </div>
+      <Router>
+        <div className="App">
+          <Menu allCurrency={this.state.cryptoData}/>
+          <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/about" component={About}/>
+          
+          
+          </Switch>
+          <Table allCurrency={this.state.cryptoData} />
+      
+        </div>
+      </Router>
     );
   }
 }
