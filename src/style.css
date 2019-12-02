@@ -12,8 +12,21 @@
 }
 
 .Table {
-  margin-left: 5vw !important;
-  width: 90vw !important;
+  margin: 5vw;
+  width: 90vw;
+  border-collapse: collapse;
+}
+
+.Table .row {
+  height: 5vh;
+}
+
+.Table .row img {
+  max-height: 4.5vh;
+}
+
+.Table .row:nth-child(even) {
+  background-color: #474c57;
 }
 
 .header {
@@ -21,9 +34,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -37,6 +50,7 @@
 .header h1 {
   float: left;
   margin: 10px auto 10px 30px;
+  color: #ffffff;
 }
 
 .header .Menu {
@@ -57,5 +71,79 @@
 .header .Menu li {
   color: #09d3ac;
   margin: auto 25px 10px 10px;
+}
+
+.content {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: left;
+}
+
+.content .box {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .box p {
+  color: #d3d3d3;
+}
+
+.content .small {
+  width: 30%;
+}
+
+.content .medium {
+  width: 45%;
+}
+
+.content .big {
+  width: 60%;
+}
+
+.content img {
+  width: 95%;
+}
+
+.cta-button {
+  min-width: 90%;
+  height: 5vh;
+  background-color: #09d3ac;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+}
+
+.change {
+  border-radius: 25px;
+  width: 50%;
+  padding: 5px;
+  margin: auto;
+}
+
+.pos {
+  background-color: #09d3ac;
+}
+
+.neg {
+  background-color: #c569a2;
 }
 /*# sourceMappingURL=style.css.map */

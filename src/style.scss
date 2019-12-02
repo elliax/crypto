@@ -1,6 +1,12 @@
+$color-darkgrey: #282c34;
+$color-lightgrey: #d3d3d3;
+$color-white: #ffffff;
+$color-teal: #09d3ac;
+$color-pink: #c569a2;
+
 #root {
-    background-color: #282c34;
-    color: #ffffff;
+    background-color: $color-darkgrey;
+    color: $color-white;
     min-height: 100vh;
     margin: 0;
     
@@ -12,24 +18,38 @@
     margin: auto;
   }
   .Table {
-      margin-left: 5vw !important;
-      width: 90vw !important;
+      margin: 5vw;
+      width: 90vw;
+      border-collapse: collapse;
+
+
+      .row {
+          height: 5vh;
+
+          img {
+              max-height: 4.5vh;
+          }
+      }
+      .row:nth-child(even) {
+          background-color: #474c57;
+          
+      }
   }
   .header {
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-width: 100vw;
     height: 8vh;
     margin: auto;
     font-size: 1.5em;
     border-bottom: solid black 1px;
-    
 
     h1 {
         float: left;
         margin: 10px auto 10px 30px; 
+        color: $color-white;
     }
     .Menu {
         margin-right: 20px;
@@ -39,8 +59,69 @@
             list-style-type: none;
         }
         li {
-            color: #09d3ac;
+            color: $color-teal;
             margin: auto 25px 10px 10px;
         }
     }
+  }
+
+  .content {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+
+
+      .box {
+
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          p {
+              color: $color-lightgrey;
+          }
+      }
+
+      .small {
+          width: 30%;
+      }
+
+      .medium {
+          width: 45%;
+      }
+
+      .big {
+          width: 60%;
+      }
+      img {
+          width: 95%;
+      }
+  }
+
+  .cta-button {
+      min-width: 90%; 
+      height: 5vh;
+      background-color: $color-teal;
+      border-radius: 50px;
+      color: $color-white;
+      font-size: 20px;
+      border: none;
+  }
+
+  .change {
+      border-radius: 25px;
+      width: 50%;
+      padding: 5px;
+      margin: auto;
+  }
+
+  .pos {
+      background-color: $color-teal;
+  }
+
+  .neg {
+      background-color: $color-pink;
   }

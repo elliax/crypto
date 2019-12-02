@@ -14,8 +14,8 @@ class Menu extends Component {
                         <Link to='/about'>
                             <li>About</li>
                         </Link>
-                        <Link to='/table'>
-                            <li>Table</li>
+                        <Link to='/crypto'>
+                            <li>Cryptocurrencies</li>
                         </Link>
                         <Link to='/about'>
                             <li>About</li>

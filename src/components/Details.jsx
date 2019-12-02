@@ -5,7 +5,7 @@ class Table extends Component {
         
      }
     render() { 
-        let allCurrency = this.props.allCurrency;
+        let thisCurrency = this.props.allCurrency;
         let posNeg = "change";
         function changeColor (value) {
             if (value < 0 ){
@@ -20,6 +20,7 @@ class Table extends Component {
 
         return (
             <React.Fragment>
+           
           <table className="Table">
           <thead>
               <th></th>
@@ -32,7 +33,7 @@ class Table extends Component {
           </thead>
           <tbody>
           
-          {allCurrency.slice(0, 10).map(index =>(
+          {thisCurrency.map(index =>(
                 <tr className="row">
                     <td><img src="https://cryptorunner.com/sv/wp-content/uploads/sites/2/2017/05/bitcoin-symbol.png" alt=""/></td>
                     <td>{index.rank}</td>
