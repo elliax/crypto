@@ -1,58 +1,57 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Chart from './Chart';
 class Table extends Component {
     state = { 
         
      }
     render() { 
-        let thisCurrency = this.props.allCurrency;
+        let thisCurrency = this.props.thisCurrency;
         let posNeg = "change";
         function changeColor (value) {
             if (value < 0 ){
-                posNeg = "change neg";
+                posNeg = "change neg detail";
             
             }
 
             else {
-                posNeg = "change pos";
+                posNeg = "change pos detail";
             }
         }
 
+        
         return (
             <React.Fragment>
-           
-          <table className="Table">
-          <thead>
-              <th></th>
-              <th>Rank</th>
-              <th>Name</th>
-              <th>Symbol</th>
-              <th>USD Price</th>
-              <th>Change 24h</th>
-              <th></th>
-          </thead>
-          <tbody>
-          
-          {thisCurrency.map(index =>(
-                <tr className="row">
-                    <td><img src="https://cryptorunner.com/sv/wp-content/uploads/sites/2/2017/05/bitcoin-symbol.png" alt=""/></td>
-                    <td>{index.rank}</td>
-                    <td>{index.Name}</td>
-                    <td>{index.Symbol}</td>
-                    <td>${index.quotes.USD.price}</td>
-                    <td onChange={changeColor(index.quotes.USD.percentage_change_24h)} >
+                <div className="content">
+                 {thisCurrency.map(index =>(
+                 <div className="box small">
+                    <h1>{index.Name}</h1>
+                    <p>{index.Symbol}</p>
+                   
+                   
+                  
+                </div>
+              ))}
+
+                 {thisCurrency.map(index =>(
+                 <div className="box big highlight">
+                  <p onChange={changeColor(index.quotes.USD.percentage_change_24h)} >
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
-                    </td>
-                    <td>
-                        <Link to={`/crypto/${index.Symbol}`}> 
-                            --> 
-                        </Link>
-                    </td>
-                </tr>
+                    </p>
+                    <p>Price: ${index.quotes.USD.price}</p>
+                    <p>Market Cap: {index.quotes.USD.market_cap}</p>
+                    <p>Volume 24h: {index.quotes.USD.volume_24h}</p>
+                    <p>Total Supply: {index.total_supply}</p>
+                    
+                    
+                   
+                  
+                </div>
               ))}
           
-          </tbody>
-          </table>
+                </div>
+          
+              
           </React.Fragment>
          );
     }

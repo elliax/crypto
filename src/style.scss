@@ -69,14 +69,16 @@ $color-pink: #c569a2;
       margin-top: 5vh;
       display: flex;
       flex-direction: row;
+   flex-wrap: wrap;
       text-align: left;
 
 
       .box {
-
+        padding: 25px;
           margin: auto;
           display: flex;
           flex-direction: column;
+          
           justify-content: center;
           align-items: center;
 
@@ -125,3 +127,14 @@ $color-pink: #c569a2;
   .neg {
       background-color: $color-pink;
   }
+
+  .detail {
+      text-align: center;
+      width: 15vw;
+      padding: 10px;
+  }
+
+  .highlight {
+      background-color: #474c57;
+  }
+

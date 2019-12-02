@@ -3,7 +3,7 @@ import Details from '../components/Details';
 
 class cryptoDetails extends Component {
     state = { 
-        cryptoData: []
+        cryptoDetails: []
      }
 
     async componentDidMount(){
@@ -18,16 +18,16 @@ class cryptoDetails extends Component {
 
         const filtered = data.filter(a=>a.Symbol===symbol);
 
-        this.setState({crypto: filtered});
+        this.setState({cryptoDetails: filtered});
 
-        console.log(filtered);
+       
        }
        
     render() { 
         return (
            
            
-           <h1>Details</h1>
+           <Details thisCurrency={this.state.cryptoDetails}/>
 
           );
     }

@@ -82,10 +82,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: left;
 }
 
 .content .box {
+  padding: 25px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,5 +148,15 @@
 
 .neg {
   background-color: #c569a2;
+}
+
+.detail {
+  text-align: center;
+  width: 15vw;
+  padding: 10px;
+}
+
+.highlight {
+  background-color: #474c57;
 }
 /*# sourceMappingURL=style.css.map */
