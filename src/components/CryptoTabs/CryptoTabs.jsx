@@ -9,46 +9,31 @@ class CryptoTabs extends Component {
         return ( 
             <Tabs className="Tabs">
                 <TabList className="TabList">
-                    <Tab className="TabBtn">Vad är en kryptovaluta?</Tab>
-                    <Tab className="TabBtn">Hur kan du använda kryptovalutor?</Tab>
-                    <Tab className="TabBtn">Varför är kryptovalutor kontroversiellt?</Tab>
-                    <Tab className="TabBtn">Varför ska vi använda oss av kryptovalutor?</Tab>
-                    <Tab className="TabBtn">Hur fungerar kryptovalutor?</Tab>
-                    <Tab className="TabBtn">Ordlista</Tab>
+                    <Tab className="TabBtn">What is a cryptocurrency?</Tab>
+                    <Tab className="TabBtn">How can cryptocurrenies be used?</Tab>
+                    <Tab className="TabBtn">Why are cryptocurrencies controversial?</Tab>
+                    <Tab className="TabBtn">Why should we use cryptocurrencies?</Tab>
+                    <Tab className="TabBtn">How do cryptocurrencies work?</Tab>
+                    <Tab className="TabBtn">Glossary</Tab>
                 
                 </TabList>
 
                 <TabPanel className="Panel">
                     <div className="PanelContent">
-                        <h2>Vad är en kryptovaluta?</h2>
+                        <h2>What is a cryptocurrency?</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
                     </div>  
                 </TabPanel>
                 <TabPanel className="Panel">
                     <div className="PanelContent">
-                        <h2>Hur kan du använda kryptovalutor?</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
-                        
-                    </div>  
-                </TabPanel>
-                <TabPanel className="Panel">
-                    <div className="PanelContent">
-                        <h2>Varför är kryptovalutor kontroversiellt?</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
-                        
-                    </div>  
-                </TabPanel>
-
-                <TabPanel className="Panel">
-                    <div className="PanelContent">
-                        <h2>Varför ska vi använda oss av kryptovalutor?</h2>
+                        <h2>How can cryptocurrenies be used?</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
                         
                     </div>  
                 </TabPanel>
                 <TabPanel className="Panel">
                     <div className="PanelContent">
-                        <h2>Hur fungerar kryptovalutor?</h2>
+                        <h2>Why are cryptocurrencies controversial?</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
                         
                     </div>  
@@ -56,7 +41,22 @@ class CryptoTabs extends Component {
 
                 <TabPanel className="Panel">
                     <div className="PanelContent">
-                        <h2>Ordlista</h2>
+                        <h2>Why should we use cryptocurrencies?</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
+                        
+                    </div>  
+                </TabPanel>
+                <TabPanel className="Panel">
+                    <div className="PanelContent">
+                        <h2>How do cryptocurrencies work?</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
+                        
+                    </div>  
+                </TabPanel>
+
+                <TabPanel className="Panel">
+                    <div className="PanelContent">
+                        <h2>Glossary</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
                         
                     </div>  

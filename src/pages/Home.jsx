@@ -14,7 +14,7 @@ class Home extends Component {
                         Blanditiis reprehenderit numquam similique placeat vero obcaecati quae 
                         quasi rerum voluptatibus?
                     </p>
-                    <Link to='/crypto'>
+                    <Link to='/about'>
                         <button className="cta-button">Let's get started</button>
                     </Link>
                 </div>
