@@ -1,8 +1,9 @@
-$color-darkgrey: #282c34;
+$color-darkgrey: #313133;
 $color-lightgrey: #d3d3d3;
 $color-white: #ffffff;
-$color-teal: #09d3ac;
-$color-pink: #c569a2;
+$color-teal: #2e5668;
+$color-pink: #d45d77;
+$color-grey: #707070;
 
 #root {
     background-color: $color-darkgrey;
@@ -50,11 +51,14 @@ $color-pink: #c569a2;
     justify-content: space-between;
     align-items: center;
     min-width: 100vw;
-    height: 8vh;
+    height: 9vh;
     margin: auto;
     font-size: 1.5em;
     border-bottom: solid black 1px;
 
+    .logo {
+        height: 9vh;
+    }
     h1 {
         float: left;
         margin: 10px auto 10px 30px; 
@@ -83,7 +87,7 @@ $color-pink: #c569a2;
         }
         .active {
             color: $color-white;
-            border-bottom: $color-teal solid 2px;
+            border-bottom: $color-teal solid 3px;
         }
     }
   }

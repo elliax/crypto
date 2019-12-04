@@ -31,10 +31,12 @@ ul {
 }
 
 .TabBtn {
-    font-size: 24px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 18px;
     width: 100%;
+    padding: 10px;
     border-bottom: solid 1px black;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import {Link} from 'react-router-dom';
-
+import logo from '../img/LoggaCryptoMate.png';
+import logoLong from '../img/Logga2CryptoMate.png';
 class Menu extends Component {
     state = {  }
 
@@ -10,7 +11,8 @@ class Menu extends Component {
         return (
             <div className="header">
             <Link to='/'>
-                <h1>CryptoMate</h1>
+               <img className="logo" src={logo} alt=""/>
+               <img className="logo" src={logoLong} alt=""/>  
             </Link>
                 <div className="Menu">
                     

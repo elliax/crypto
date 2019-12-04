@@ -1,5 +1,5 @@
 #root {
-  background-color: #282c34;
+  background-color: #313133;
   color: #ffffff;
   min-height: 100vh;
   margin: 0;
@@ -22,7 +22,7 @@
   text-transform: uppercase;
   font-weight: 600;
   height: 5vh;
-  border-bottom: solid 2px #09d3ac;
+  border-bottom: solid 2px #2e5668;
 }
 
 .Table .row {
@@ -50,10 +50,14 @@
       -ms-flex-align: center;
           align-items: center;
   min-width: 100vw;
-  height: 8vh;
+  height: 9vh;
   margin: auto;
   font-size: 1.5em;
   border-bottom: solid black 1px;
+}
+
+.header .logo {
+  height: 9vh;
 }
 
 .header h1 {
@@ -95,7 +99,7 @@
 
 .header .Menu .active {
   color: #ffffff;
-  border-bottom: #09d3ac solid 2px;
+  border-bottom: #2e5668 solid 3px;
 }
 
 .content {
@@ -153,7 +157,7 @@
 .cta-button {
   min-width: 90%;
   height: 5vh;
-  background-color: #09d3ac;
+  background-color: #2e5668;
   border-radius: 50px;
   color: #ffffff;
   font-size: 20px;
@@ -168,11 +172,11 @@
 }
 
 .pos {
-  background-color: #09d3ac;
+  background-color: #2e5668;
 }
 
 .neg {
-  background-color: #c569a2;
+  background-color: #d45d77;
 }
 
 .detail {
@@ -192,7 +196,7 @@
 }
 
 .arrowLink :hover {
-  color: #c569a2;
+  color: #d45d77;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }

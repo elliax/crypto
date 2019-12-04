@@ -43,9 +43,15 @@ class Table extends Component {
                     
                 </div>
               ))}
-          
+              <div className="box medium">
+              <Chart/>
+              </div>
+              
+           <div className="box small">
+                  <h2>compare</h2>
                 </div>
-          <Chart/>
+                </div>
+          
               
           </React.Fragment>
          );
