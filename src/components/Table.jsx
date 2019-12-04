@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 class Table extends Component {
     state = { 
         
@@ -44,8 +46,8 @@ class Table extends Component {
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
                     </td>
                     <td>
-                        <Link to={`/crypto/${index.Symbol}`}> 
-                        -->
+                        <Link className="arrowLink"  to={`/crypto/${index.Symbol}`}> 
+                        <FontAwesomeIcon icon={faArrowRight} />
                         </Link>
                     </td>
                 </tr>

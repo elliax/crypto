@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Details from '../components/Details';
-import Loader from '../components/Loader';
+import Loader from '../components/Loader/Loader';
 
 class cryptoDetails extends Component {
     state = { 

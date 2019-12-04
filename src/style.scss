@@ -160,3 +160,16 @@ $color-pink: #c569a2;
       display: flex;
       align-content: center;
   }
+
+  .arrowLink {
+      
+      color: $color-white;
+      font-size: 20px;
+
+      :hover {
+        color: $color-pink;
+        
+        transition-duration: 1s;
+        
+      }
+  }

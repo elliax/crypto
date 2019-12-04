@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Table from "../components/Table";
-import Loader from '../components/Loader';
+import Loader from '../components/Loader/Loader';
 
 class cryptoCurrencies extends Component {
     state = { 

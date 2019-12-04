@@ -185,4 +185,15 @@
   -ms-flex-line-pack: center;
       align-content: center;
 }
+
+.arrowLink {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.arrowLink :hover {
+  color: #c569a2;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
 /*# sourceMappingURL=style.css.map */
