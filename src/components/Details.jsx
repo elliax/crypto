@@ -18,24 +18,22 @@ class Table extends Component {
                 posNeg = "change pos detail";
             }
         }
-
+ 
         
         return (
             <React.Fragment>
                 <div className="content">
                  {thisCurrency.map(index =>(
-                 <div className="box small">
+                 <div className="box medium">
                     <h1>{index.Name}</h1>
                     <p>{index.Symbol}</p>
-                   
-                   
-                  
+                    <p>{index.description}</p>
                 </div>
               ))}
 
                  {thisCurrency.map(index =>(
-                 <div className="box big highlight">
-                  <p onChange={changeColor(index.quotes.USD.percentage_change_24h)} >
+                 <div className="box medium highlight">
+                  <p onChange={changeColor(index.quotes.USD.percentage_change_24h)} >Trend 24h:
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
                     </p>
                     <p>Price: ${index.quotes.USD.price}</p>
@@ -43,14 +41,11 @@ class Table extends Component {
                     <p>Volume 24h: {index.quotes.USD.volume_24h}</p>
                     <p>Total Supply: {index.total_supply}</p>
                     
-                    
-                   
-                  
                 </div>
               ))}
           
                 </div>
-          
+          <Chart/>
               
           </React.Fragment>
          );

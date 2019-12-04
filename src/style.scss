@@ -21,14 +21,16 @@ $color-pink: #c569a2;
       margin: 5vw;
       width: 90vw;
       border-collapse: collapse;
-
+        text-align: center;
 
       .row {
-          height: 5vh;
+        height: 5vh;
+
 
           img {
               max-height: 4.5vh;
           }
+          
       }
       .row:nth-child(even) {
           background-color: #474c57;
@@ -69,13 +71,14 @@ $color-pink: #c569a2;
       margin-top: 5vh;
       display: flex;
       flex-direction: row;
-   flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex-grow: 1;
       text-align: left;
 
 
       .box {
         padding: 25px;
-          margin: auto;
+          margin: 2vh auto;
           display: flex;
           flex-direction: column;
           
@@ -138,3 +141,22 @@ $color-pink: #c569a2;
       background-color: #474c57;
   }
 
+
+  .loader {
+    border: 16px solid $color-lightgrey;
+    border-radius: 50%;
+    border-top: 16px solid $color-teal;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+    
+  }
+
+  .loader_wrapper {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-content: center;
+  }

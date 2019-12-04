@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Details from '../components/Details';
+import Loader from '../components/Loader';
 
 class cryptoDetails extends Component {
     state = { 
-        cryptoDetails: []
+        cryptoDetails: [],
+        loading: true
      }
 
     async componentDidMount(){
@@ -19,11 +21,12 @@ class cryptoDetails extends Component {
         const filtered = data.filter(a=>a.Symbol===symbol);
 
         this.setState({cryptoDetails: filtered});
-
+        this.setState({loading: false});
        
        }
        
     render() { 
+        if (this.state.loading) return <Loader/>
         return (
            
            

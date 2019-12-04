@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Table from "../components/Table";
+import Loader from '../components/Loader';
 
 class cryptoCurrencies extends Component {
     state = { 
-        cryptoData:[] 
+        cryptoData:[],
+        loading: true
      }
 
     async componentDidMount(){
@@ -12,11 +14,13 @@ class cryptoCurrencies extends Component {
         const data = await response.json();
      
         this.setState({cryptoData: data});
+        this.setState({loading: false});
        }
 
     render() { 
+        if (this.state.loading) return <Loader/>
+
         return ( 
-            
             <Table allCurrency={this.state.cryptoData} />
         )
     }

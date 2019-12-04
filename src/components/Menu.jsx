@@ -17,12 +17,6 @@ class Menu extends Component {
                         <Link to='/crypto'>
                             <li>Cryptocurrencies</li>
                         </Link>
-                        <Link to='/about'>
-                            <li>About</li>
-                        </Link>
-                        <Link to='/about'>
-                            <li>About</li>
-                        </Link>
                     </ul>
                     
                 </div>

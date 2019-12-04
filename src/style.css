@@ -15,6 +15,7 @@
   margin: 5vw;
   width: 90vw;
   border-collapse: collapse;
+  text-align: center;
 }
 
 .Table .row {
@@ -84,12 +85,15 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: left;
 }
 
 .content .box {
   padding: 25px;
-  margin: auto;
+  margin: 2vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,5 +162,27 @@
 
 .highlight {
   background-color: #474c57;
+}
+
+.loader {
+  border: 16px solid #d3d3d3;
+  border-radius: 50%;
+  border-top: 16px solid #09d3ac;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+.loader_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=style.css.map */

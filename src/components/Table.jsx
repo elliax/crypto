@@ -22,29 +22,30 @@ class Table extends Component {
             <React.Fragment>
           <table className="Table">
           <thead>
-              <th></th>
-              <th>Rank</th>
+              
+              
               <th>Name</th>
-              <th>Symbol</th>
+              <th>Market Cap</th> 
               <th>USD Price</th>
-              <th>Change 24h</th>
+              <th>Volume 24h</th>
+              <th>Trend 24h</th>
               <th></th>
           </thead>
           <tbody>
           
           {allCurrency.slice(0, 10).map(index =>(
                 <tr className="row">
-                    <td><img src="https://cryptorunner.com/sv/wp-content/uploads/sites/2/2017/05/bitcoin-symbol.png" alt=""/></td>
-                    <td>{index.rank}</td>
                     <td>{index.Name}</td>
-                    <td>{index.Symbol}</td>
+                    <td>{index.quotes.USD.market_cap}</td>
+                    
                     <td>${index.quotes.USD.price}</td>
-                    <td onChange={changeColor(index.quotes.USD.percentage_change_24h)} >
+                    <td>{index.quotes.USD.volume_24h}</td>
+                    <td onChange={changeColor(index.quotes.USD.percentage_change_24h)} > 
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
                     </td>
                     <td>
                         <Link to={`/crypto/${index.Symbol}`}> 
-                            --> 
+                        -->
                         </Link>
                     </td>
                 </tr>
