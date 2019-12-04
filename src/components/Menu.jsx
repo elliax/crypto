@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 import {Link} from 'react-router-dom';
+
 class Menu extends Component {
     state = {  }
+
     render() { 
+
         return (
             <div className="header">
             <Link to='/'>
@@ -11,12 +15,12 @@ class Menu extends Component {
                 <div className="Menu">
                     
                     <ul>
-                        <Link to='/about'>
-                            <li>About</li>
-                        </Link>
-                        <Link to='/crypto'>
+                        <NavLink  className="link" activeClassName="active" to='/about'>
+                            <li>Learn more</li>
+                        </NavLink>
+                        <NavLink  className="link" activeClassName="active" to='/crypto'>
                             <li>Cryptocurrencies</li>
-                        </Link>
+                        </NavLink>
                     </ul>
                     
                 </div>

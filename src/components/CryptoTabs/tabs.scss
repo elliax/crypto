@@ -1,0 +1,62 @@
+$color-darkgrey: #282c34;
+$color-lightgrey: #d3d3d3;
+$color-white: #ffffff;
+$color-teal: #09d3ac;
+$color-pink: #c569a2;
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Tabs {
+    margin: 3vh auto;
+   display: flex;
+   flex-direction: row;
+   width: 90vw;
+   height: 80vh;
+}
+
+.TabList {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+   height: 100%;
+   margin-top: 0;
+   min-width: 20vw;
+   background-color: rgba($color: #ffffff, $alpha: 0.2);
+    
+}
+
+.TabBtn {
+    font-size: 24px;
+    width: 100%;
+    border-bottom: solid 1px black;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Panel {
+
+        padding: 20px;
+        display: flex;
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+        width: 70vw;
+       
+        h2 {
+            
+            min-width: 100%;
+        }
+ }
+
+ .PanelContent {
+     width: 65vw;
+    position: absolute;
+    left: 27vw;
+    
+    
+ }

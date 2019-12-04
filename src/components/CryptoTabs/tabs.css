@@ -1,0 +1,72 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Tabs {
+  margin: 3vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90vw;
+  height: 80vh;
+}
+
+.TabList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-top: 0;
+  min-width: 20vw;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.TabBtn {
+  font-size: 24px;
+  width: 100%;
+  border-bottom: solid 1px black;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Panel {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 70vw;
+}
+
+.Panel h2 {
+  min-width: 100%;
+}
+
+.PanelContent {
+  width: 65vw;
+  position: absolute;
+  left: 27vw;
+}
+/*# sourceMappingURL=tabs.css.map */

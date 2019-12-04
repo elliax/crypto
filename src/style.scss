@@ -23,9 +23,16 @@ $color-pink: #c569a2;
       border-collapse: collapse;
         text-align: center;
 
+        th {
+            text-transform: uppercase;
+            font-weight: 600;
+            height: 5vh;
+            
+            border-bottom: solid 2px $color-teal;
+        }
       .row {
         height: 5vh;
-
+        font-weight: 100;
 
           img {
               max-height: 4.5vh;
@@ -59,10 +66,24 @@ $color-pink: #c569a2;
             display: flex;
             flex-direction: row;
             list-style-type: none;
+            color: $color-white;
         }
         li {
-            color: $color-teal;
-            margin: auto 25px 10px 10px;
+            text-align: center;
+            margin: auto 10px 8px 10px;
+        }
+
+        .link {
+            color: $color-lightgrey;
+
+            :hover {
+                color:  $color-white;
+                transition-duration: 0.5s;
+            }
+        }
+        .active {
+            color: $color-white;
+            border-bottom: $color-teal solid 2px;
         }
     }
   }
@@ -81,13 +102,11 @@ $color-pink: #c569a2;
           margin: 2vh auto;
           display: flex;
           flex-direction: column;
-          
+          color: $color-white;
           justify-content: center;
           align-items: center;
 
-          p {
-              color: $color-lightgrey;
-          }
+         
       }
 
       .small {
@@ -138,28 +157,10 @@ $color-pink: #c569a2;
   }
 
   .highlight {
-      background-color: #474c57;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
   }
 
-
-  .loader {
-    border: 16px solid $color-lightgrey;
-    border-radius: 50%;
-    border-top: 16px solid $color-teal;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-    margin: auto;
-    
-  }
-
-  .loader_wrapper {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      align-content: center;
-  }
 
   .arrowLink {
       
@@ -173,3 +174,5 @@ $color-pink: #c569a2;
         
       }
   }
+
+
