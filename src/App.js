@@ -7,11 +7,28 @@ import Home from './pages/Home';
 import cryptoCurrencies from './pages/cryptocurrencies';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import cryptoDetails from './pages/cryptoDetails';
+import Loader from './components/Loader/Loader';
+import Compare from './pages/Compare';
+import Course from './pages/Course';
 
 
 class App extends Component {
-  state = {  }
+  state = { 
+    cryptoData:[],
+        loading: true 
+   }
+
+   async componentDidMount(){
+    const url = "https://my.api.mockaroo.com/cryptocurrency-data.json?key=8eb9e6f0";
+    const response = await fetch(url);
+    const data = await response.json();
+ 
+    this.setState({cryptoData: data});
+    this.setState({loading: false});
+   }
+
   render() { 
+    if (this.state.loading) return <Loader/>
     return (  
     <Router>
       <div className="App">
@@ -19,8 +36,20 @@ class App extends Component {
         <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>
-        <Route path="/crypto" exact component={cryptoCurrencies}/>
+        
+        <Route 
+          path="/crypto" exact 
+          render={props => (
+            <Table {...props} cryptoData={this.state.cryptoData} />
+          )}/>
+
+        <Route 
+          path="/compare" 
+          render={props => (
+            <Compare {...props} chartData={this.state.cryptoData} />
+          )}/>
         <Route path="/crypto/:Symbol" component={cryptoDetails}/>
+        <Route path="/course" component={Course}/>
         
         </Switch>
         

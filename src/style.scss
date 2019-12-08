@@ -130,6 +130,7 @@ $color-grey: #707070;
   }
 
   .cta-button {
+      margin-top: 20px;
       min-width: 90%; 
       height: 5vh;
       background-color: $color-teal;
@@ -137,6 +138,7 @@ $color-grey: #707070;
       color: $color-white;
       font-size: 20px;
       border: none;
+      padding: 10px;
   }
 
   .change {

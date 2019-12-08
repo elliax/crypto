@@ -155,6 +155,7 @@
 }
 
 .cta-button {
+  margin-top: 20px;
   min-width: 90%;
   height: 5vh;
   background-color: #2e5668;
@@ -162,6 +163,7 @@
   color: #ffffff;
   font-size: 20px;
   border: none;
+  padding: 10px;
 }
 
 .change {

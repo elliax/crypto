@@ -7,7 +7,7 @@ class Table extends Component {
         
      }
     render() { 
-        let allCurrency = this.props.allCurrency;
+        let allCurrency = this.props.cryptoData;
         let posNeg = "change";
         function changeColor (value) {
             if (value < 0 ){

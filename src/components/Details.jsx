@@ -44,7 +44,7 @@ class Table extends Component {
                 </div>
               ))}
               <div className="box medium">
-              <Chart/>
+              <Chart chartData={thisCurrency}/>
               </div>
               
            <div className="box small">

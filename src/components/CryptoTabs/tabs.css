@@ -53,6 +53,11 @@ ul {
           justify-content: center;
 }
 
+.TabBtn--selected {
+  border-color: #aaa !important;
+  color: #d45d77 !important;
+}
+
 .Panel {
   padding: 20px;
   display: -webkit-box;
@@ -70,5 +75,12 @@ ul {
   width: 65vw;
   position: absolute;
   left: 27vw;
+}
+
+.TabBtn--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: black;
+  border-radius: 5px 5px 0 0;
 }
 /*# sourceMappingURL=tabs.css.map */

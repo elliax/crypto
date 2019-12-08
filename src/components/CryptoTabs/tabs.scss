@@ -40,6 +40,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &--selected {
+      
+        border-color: #aaa !important;
+        color:#d45d77 !important;
+      }
 }
 
 .Panel {
@@ -62,3 +68,10 @@ ul {
     
     
  }
+
+ .TabBtn--selected {
+    background: #fff;
+    border-color: #aaa;
+    color: black;
+    border-radius: 5px 5px 0 0;
+  }
