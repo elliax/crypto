@@ -83,4 +83,8 @@ ul {
   color: black;
   border-radius: 5px 5px 0 0;
 }
+
+.react-tabs__tab--selected {
+  color: #c569a2 !important;
+}
 /*# sourceMappingURL=tabs.css.map */
