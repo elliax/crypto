@@ -10,6 +10,8 @@ import cryptoDetails from './pages/cryptoDetails';
 import Loader from './components/Loader/Loader';
 import Compare from './pages/Compare';
 import Course from './pages/Course';
+import QuizPage from './pages/QuizPage';
+
 
 
 class App extends Component {
@@ -50,6 +52,8 @@ class App extends Component {
           )}/>
         <Route path="/crypto/:Symbol" component={cryptoDetails}/>
         <Route path="/course" component={Course}/>
+        
+        <Route path="/quiz" component={QuizPage}/>
         
         </Switch>
         

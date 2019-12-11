@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
   import {
-    PieChart, Pie, Legend, Tooltip,  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, 
+    LineChart, Line, PieChart, Pie, Legend, Tooltip,  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, 
   } from 'recharts';
 
 
@@ -9,25 +9,41 @@ import React, { Component } from 'react';
 class Compare extends Component {
     state = {  }
     render() { 
-      let data = this.props.chartData.slice(0, 10);
+      let chartData = this.props.chartData.slice(0, 10);  
+      let series = [
+        {
+          name: "USD",
+          data: []
+        }
+      ];
+      chartData.map(data =>
+        series[0].data.push({
+          Symbol: data.Symbol,
+          Price: parseFloat(data.quotes.USD.price)
+        })
+      )
+      console.log(series[0]);
+
         return ( 
           <div>
-          <BarChart
-        width={800}
-        height={500}
-        data={data}
+         <h1>Compare the 10 most popular cryptocurrencies</h1>
+
+      <BarChart
+        width={500}
+        height={600}
+        data={series[0].data}
         margin={{
-          top: 5, right: 50, left: 20, bottom: 5,
+          top: 5, right: 30, left: 20, bottom: 5,
         }}
       >
-        
+        <CartesianGrid strokeDasharray="1 3" />
         <XAxis dataKey="Symbol" />
-        <YAxis type="number" domain={[0, 'dataMax']} allowDataOverflow="true"/>
+        <YAxis type="number" domain={[0, 8500]}  allowDataOverflow="true" interval="preseveStart"/>
         <Tooltip />
         <Legend />
-        <Bar dataKey="Circulating Supply" label="Symbol" fill="blue" />
-
+        <Bar dataKey="Price" fill="pink" />
       </BarChart>
+
       </div>
          );
     }

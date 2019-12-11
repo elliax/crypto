@@ -23,6 +23,9 @@ class Menu extends Component {
                         <NavLink  className="link" activeClassName="active" to='/crypto'>
                             <li>Cryptocurrencies</li>
                         </NavLink>
+                        <NavLink  className="link" activeClassName="active" to='/quiz'>
+                            <li>Quiz</li>
+                        </NavLink>
                     </ul>
                     
                 </div>

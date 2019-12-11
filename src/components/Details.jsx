@@ -6,7 +6,7 @@ class Table extends Component {
         
      }
     render() { 
-        let thisCurrency = this.props.thisCurrency;
+        
         let posNeg = "change";
         function changeColor (value) {
             if (value < 0 ){
@@ -18,8 +18,9 @@ class Table extends Component {
                 posNeg = "change pos detail";
             }
         }
- 
         
+        let thisCurrency = this.props.thisCurrency;
+
         return (
             <React.Fragment>
                 <div className="content">
@@ -33,22 +34,41 @@ class Table extends Component {
 
                  {thisCurrency.map(index =>(
                  <div className="box medium highlight">
-                  <p onChange={changeColor(index.quotes.USD.percentage_change_24h)} >Trend 24h:
+                  <p onChange={changeColor(index.quotes.USD.percentage_change_24h)} >
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
                     </p>
-                    <p>Price: ${index.quotes.USD.price}</p>
-                    <p>Market Cap: {index.quotes.USD.market_cap}</p>
-                    <p>Volume 24h: {index.quotes.USD.volume_24h}</p>
-                    <p>Total Supply: {index.total_supply}</p>
+                 <table>
+                     <tbody>
+                         <tr>
+                             <td>Price:</td>
+                             <td>${index.quotes.USD.price}</td>
+                        </tr>
+                        <tr>
+                             <td>Market Cap:</td>
+                             <td>{index.quotes.USD.market_cap}</td>
+                        </tr>
+                        <tr>
+                             <td>Volume 24h:</td>
+                             <td>{index.quotes.USD.volume_24h}</td>
+                        </tr>
+                        <tr>
+                             <td>Total Supply:</td>
+                             <td>{index.total_supply}</td>
+                        </tr>
+
+                     </tbody>
+                 </table>
+                 
+             
                     
                 </div>
               ))}
               <div className="box medium">
-              <Chart chartData={thisCurrency}/>
+              <Chart thisCurrency={this.props.thisCurrency}/>
               </div>
               
            <div className="box small">
-                  <h2>compare</h2>
+                  
                 </div>
                 </div>
           

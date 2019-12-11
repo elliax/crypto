@@ -1,0 +1,14 @@
+.selected {
+  background: #c569a2 !important;
+}
+
+.Quiz {
+  width: 70vw;
+  margin: auto;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=quiz.css.map */
