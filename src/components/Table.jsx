@@ -26,11 +26,11 @@ class Table extends Component {
           <thead>
               
               
-              <th>Name</th>
-              <th>Market Cap</th> 
-              <th>USD Price</th>
-              <th>Volume 24h</th>
-              <th>Trend 24h</th>
+              <th>Namn</th>
+              <th>Börsvärde</th> 
+              <th>Pris (USD)</th>
+              <th>Volym (24h)</th>
+              <th>Trend (24h)</th>
               <th></th>
           </thead>
           <tbody>

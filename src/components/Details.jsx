@@ -64,11 +64,11 @@ class Table extends Component {
                 </div>
               ))}
               <div className="box medium">
-              <Chart thisCurrency={this.props.thisCurrency}/>
+              <h2>Valutans förändring de senaste 12 månaderna:</h2>
+              <Chart thisCurrency={thisCurrency}/>
               </div>
               
            <div className="box small">
-                  
                 </div>
                 </div>
           

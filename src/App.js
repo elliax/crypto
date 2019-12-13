@@ -9,7 +9,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import cryptoDetails from './pages/cryptoDetails';
 import Loader from './components/Loader/Loader';
 import Compare from './pages/Compare';
-import Course from './pages/Course';
 import QuizPage from './pages/QuizPage';
 
 
@@ -51,13 +50,12 @@ class App extends Component {
             <Compare {...props} chartData={this.state.cryptoData} />
           )}/>
         <Route path="/crypto/:Symbol" component={cryptoDetails}/>
-        <Route path="/course" component={Course}/>
         
         <Route path="/quiz" component={QuizPage}/>
         
         </Switch>
         
-    
+          
       </div>
     </Router> );
   }

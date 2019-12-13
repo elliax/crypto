@@ -1,8 +1,9 @@
 #root {
-  background-color: #313133;
+  background-color: #4f4f50;
   color: #ffffff;
   min-height: 100vh;
   margin: 0;
+  font-size: 120%;
 }
 
 .App {
@@ -22,7 +23,7 @@
   text-transform: uppercase;
   font-weight: 600;
   height: 5vh;
-  border-bottom: solid 2px #2e5668;
+  border-bottom: solid 2px #3b89ad;
 }
 
 .Table .row {
@@ -35,7 +36,7 @@
 }
 
 .Table .row:nth-child(even) {
-  background-color: #474c57;
+  background-color: #8d8c8c;
 }
 
 .header {
@@ -99,7 +100,7 @@
 
 .header .Menu .active {
   color: #ffffff;
-  border-bottom: #2e5668 solid 3px;
+  border-bottom: #3b89ad solid 3px;
 }
 
 .content {
@@ -158,7 +159,7 @@
   margin-top: 20px;
   min-width: 90%;
   height: 5vh;
-  background-color: #2e5668;
+  background-color: #3b89ad;
   border-radius: 50px;
   color: #ffffff;
   font-size: 20px;
@@ -174,11 +175,11 @@
 }
 
 .pos {
-  background-color: #2e5668;
+  background-color: #3b89ad;
 }
 
 .neg {
-  background-color: #d45d77;
+  background-color: #ff5da9;
 }
 
 .detail {
@@ -198,7 +199,7 @@
 }
 
 .arrowLink :hover {
-  color: #d45d77;
+  color: #ff5da9;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }

@@ -14,9 +14,7 @@ class Quiz extends React.Component {
 
 
   loadQuizData = () => {
-    // console.log(quizData[0].question)
 
-    
     this.setState(() => {
       return {
         questions: quizData[this.state.currentQuestion].question,
@@ -30,14 +28,15 @@ class Quiz extends React.Component {
     this.loadQuizData();
   }
   nextQuestionHandler = () => {
-    // console.log('test')
-    this.setState({disableOptions: false});
+   
     const { myAnswer, answer, score } = this.state;
 
     if (this.state.myAnswer === this.state.answer) {
       this.setState({
         score: score + 1
       });
+
+      this.setState({myAnswer: null});
     }
 
     this.setState({
@@ -62,6 +61,7 @@ class Quiz extends React.Component {
   checkAnswer = answer => {
 
     this.setState({ myAnswer: answer, disabled: false, disableOptions: true });
+    
   };
   finishHandler = () => {
     const { myAnswer, answer, score } = this.state;
@@ -106,8 +106,8 @@ class Quiz extends React.Component {
             <li
             disabled={this.state.disableOptions}
               key={option.id}
-              className={`ui floating message options ${this.state.class}
-         ${myAnswer === option ? "selected" : null}
+              className={`ui floating message options 
+                ${myAnswer === option ? "selected" : null}
          `}
               onClick={() => this.checkAnswer(option)}
             >

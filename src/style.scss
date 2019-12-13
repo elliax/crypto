@@ -1,16 +1,17 @@
-$color-darkgrey: #313133;
+$color-darkgrey: #4f4f50;
 $color-lightgrey: #d3d3d3;
 $color-white: #ffffff;
-$color-teal: #2e5668;
-$color-pink: #d45d77;
-$color-grey: #707070;
+$color-teal: #3b89ad;
+$color-pink: #ff5da9;
+$color-grey: #8d8c8c;
+$text: #ffffff;
 
 #root {
     background-color: $color-darkgrey;
-    color: $color-white;
+    color: $text;
     min-height: 100vh;
     margin: 0;
-    
+    font-size: 120%;
   }
   
   .App {
@@ -41,7 +42,7 @@ $color-grey: #707070;
           
       }
       .row:nth-child(even) {
-          background-color: #474c57;
+          background-color: $color-grey;
           
       }
   }
@@ -62,7 +63,7 @@ $color-grey: #707070;
     h1 {
         float: left;
         margin: 10px auto 10px 30px; 
-        color: $color-white;
+        color: $text;
     }
     .Menu {
         margin-right: 20px;
@@ -70,7 +71,7 @@ $color-grey: #707070;
             display: flex;
             flex-direction: row;
             list-style-type: none;
-            color: $color-white;
+            color: $text;
         }
         li {
             text-align: center;
@@ -81,12 +82,12 @@ $color-grey: #707070;
             color: $color-lightgrey;
 
             :hover {
-                color:  $color-white;
+                color:  $text;
                 transition-duration: 0.5s;
             }
         }
         .active {
-            color: $color-white;
+            color: $text;
             border-bottom: $color-teal solid 3px;
         }
     }
@@ -106,7 +107,7 @@ $color-grey: #707070;
           margin: 2vh auto;
           display: flex;
           flex-direction: column;
-          color: $color-white;
+          color: $text;
           justify-content: center;
           align-items: center;
 
@@ -135,7 +136,7 @@ $color-grey: #707070;
       height: 5vh;
       background-color: $color-teal;
       border-radius: 50px;
-      color: $color-white;
+      color: $text;
       font-size: 20px;
       border: none;
       padding: 10px;
@@ -170,7 +171,7 @@ $color-grey: #707070;
 
   .arrowLink {
       
-      color: $color-white;
+      color: $text;
       font-size: 20px;
 
       :hover {

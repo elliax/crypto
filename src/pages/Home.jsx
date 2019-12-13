@@ -7,15 +7,12 @@ class Home extends Component {
         return ( 
             <div className="content">
                 <div className="box small">
-                    <h1>What is cryptocurrencies and how are they used? Let's find out!</h1>
+                    <h1>Har du hört talas om kryptovalutor?</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, 
-                        mollitia esse! Esse nobis voluptas totam fugit quo neque similique? 
-                        Blanditiis reprehenderit numquam similique placeat vero obcaecati quae 
-                        quasi rerum voluptatibus?
+                    År 2008 skriver Satoshi Nakamoto koden som skapar Bitcoin. Bitcoin är den första och mest välkända kryptovalutan. Idag finns det över 2000 olika kryptovalutor.
                     </p>
                     <Link to='/about'>
-                        <button className="cta-button">Let's get started</button>
+                        <button className="cta-button">Lär dig mer!</button>
                     </Link>
                 </div>
                 <div className="box big">

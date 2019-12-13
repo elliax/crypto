@@ -18,13 +18,16 @@ class Menu extends Component {
                     
                     <ul>
                         <NavLink  className="link" activeClassName="active" to='/about'>
-                            <li>Learn more</li>
+                            <li>Lär dig mer</li>
                         </NavLink>
                         <NavLink  className="link" activeClassName="active" to='/crypto'>
-                            <li>Cryptocurrencies</li>
+                            <li>Kryptovalutor</li>
                         </NavLink>
                         <NavLink  className="link" activeClassName="active" to='/quiz'>
                             <li>Quiz</li>
+                        </NavLink>
+                        <NavLink  className="link" activeClassName="active" to='/compare'>
+                            <li>Jämför Valutor</li>
                         </NavLink>
                     </ul>
                     
