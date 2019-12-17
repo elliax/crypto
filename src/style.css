@@ -1,5 +1,5 @@
 #root {
-  background-color: #707070;
+  background-color: #313131;
   color: #ffffff;
   min-height: 100vh;
   margin: 0;
@@ -36,7 +36,7 @@
 }
 
 .Table .row:nth-child(even) {
-  background-color: #313131;
+  background-color: #707070;
 }
 
 .header {
