@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import avatar from '../img/AvatarCM.png';
+import coin from '../img/BTC.png';
 
 class Home extends Component {
     state = {  }

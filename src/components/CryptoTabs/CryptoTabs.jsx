@@ -14,9 +14,8 @@ class CryptoTabs extends Component {
                     <Tab className="TabBtn">Vad är en kryptovaluta?</Tab>
                     <Tab className="TabBtn">Hur kan du använda kryptovalutor?</Tab>
                     <Tab className="TabBtn">Varför är kryptovalutor kontroversiellt?</Tab>
-                    <Tab className="TabBtn">Varför ska vi använda oss av kryptovalutor?</Tab>
+                    <Tab className="TabBtn">Fördelar och nackdelar med kryptovalutor</Tab>
                     <Tab className="TabBtn">Hur fungerar kryptovalutor?</Tab>
-                    <Tab className="TabBtn">Pengars(?) historia</Tab>
                     <Tab className="TabBtn">Ordlista</Tab>
                 
                 </TabList>
@@ -59,11 +58,11 @@ class CryptoTabs extends Component {
                         <h2>Hur kan du använda kryptovalutor?</h2>
                         <p>Idag använder människor kryptovalutor till att:</p>
                        <ul className="howToUse">
-                           <li>Köpa och sälja saker på nätet</li>
-                           <li>Växla till "vanliga" pengar</li>
-                           <li>Investera</li>
-                           <li>Spela med</li>
-                           <li>Som en direkt betalningsmetod mellan användare som inte går att spåra</li>
+                           <li>- Köpa och sälja saker på nätet</li>
+                           <li>- Växla till "vanliga" pengar</li>
+                           <li>- Investera</li>
+                           <li>- Spela med</li>
+                           <li>- Som en direkt betalningsmetod mellan användare som inte går att spåra</li>
                        </ul>
                         
                     </div>  
@@ -87,7 +86,7 @@ class CryptoTabs extends Component {
 
                 <TabPanel className="Panel">
                     <div className="PanelContent">
-                        <h2>Varför ska du använda kryptovalutor?</h2>
+                        <h2>Fördelar och nackdelar med kryptovalutor</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
                         <table className="proCon">
                             <thead> 
@@ -154,16 +153,16 @@ class CryptoTabs extends Component {
                         Om du vill skicka pengar till din kompis skapar du en transaktion. Din transaktion signerar du med din privata nyckel och publicerar den sen till nätverket. Alla noder i nätverket känner då till transaktionen. När nätverket är överens om transaktionen får din kompis sina pengar.
                         </p>
                         <h3>Blockkedjan</h3>
-                        <p></p>
+                        <p>Istället för en bank som godkänner transaktioner har Bitcoin en blockkedja. Blockkedjan sparar alla transaktioner. Det är nätverket som godkänner transaktioner och sparar dem i ett nytt block. Din kompis får sina pengar när transaktionen ligger i blockkedjan. 
+                            <br/><br/>
+                            Nätverket består av miners som tävlar om att skapa nya block. När miners får nya block skapade vinner de en bit bitcoin. Vem som helst kan bli en miner, men du måste ha en hög trovärdighet i nätverket för att lyckas. Den som sköter sig bäst och är snabbast vinner.
+                            <br/><br/>
+                            Alla nya block pekar mot ett tidigare block vilket skapar en blockkedja.
+                        </p>
                     </div>  
                 </TabPanel>
 
-                <TabPanel className="Panel">
-                    <div className="PanelContent">
-                        <h2>Pengars(?) historia</h2>
-                        <p>Så länge människor har funnits har det funnits pengar i olika former. Som till exempel metaller och papperslappar.</p>
-                    </div>  
-                </TabPanel>
+                
 
                 <TabPanel className="Panel">
                     <div className="PanelContent">
