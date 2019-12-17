@@ -1,11 +1,11 @@
 .popup {
   position: fixed;
-  top: 0;
+  top: 9vh;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 91vh;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: black;
 }
 
@@ -17,7 +17,7 @@
   height: 50vh;
   margin: auto;
   border-radius: 20px;
-  background: white;
+  background: #f7b58b;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,5 +32,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.quizBtn {
+  width: 50%;
+  background-color: #210a72;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
 }
 /*# sourceMappingURL=popup.css.map */

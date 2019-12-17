@@ -41,7 +41,7 @@ console.log(series[0].data);
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="Change" stroke="#ff5da9" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="Change" stroke="#f7b58b" activeDot={{ r: 8 }} />
         </LineChart>
          );
     }

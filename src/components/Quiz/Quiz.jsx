@@ -83,24 +83,25 @@ class Quiz extends React.Component {
        
       return (
         <div className="Quiz result">
-          <h2>Final score is {this.state.score}/{quizData.length}! </h2>
+          <h2>Du fick {this.state.score}/{quizData.length} rätt! </h2>
           <p>
-            The correct answer's for the questions was
-            <ul>
+            De rätta svaren var:
+            </p>
+            <ol className="quizResultat">
               {quizData.map((item, index) => (
                 <li className={this.state.class} key={index}>
                   {item.answer}
                 </li>
               ))}
-            </ul>
-          </p>
+            </ol>
+          <a className="ui button btn" href="/">Gå tillbaka till startsidan</a> <a className="ui button btn" href="/quiz">Testa igen</a> 
         </div>
       );
     } else {
       return (
         <div className="Quiz">
           <h1>{this.state.questions} </h1>
-          <span>{`Questions ${currentQuestion+1}/${quizData.length}`}</span>
+          <span>{`Fråga ${currentQuestion+1}/${quizData.length}`}</span>
           <ul>
           {options.map(option => (
             <li
@@ -117,17 +118,17 @@ class Quiz extends React.Component {
           </ul>
           {currentQuestion < quizData.length - 1 && (
             <button
-              className="ui inverted button"
+              className="ui inverted button btn"
               disabled={this.state.disabled}
               onClick={this.nextQuestionHandler}
             >
-              Next
+              Nästa fråga
             </button>
           )}
           {/* //adding a finish button */}
           {currentQuestion === quizData.length - 1 && (
-            <button className="ui inverted button" onClick={this.finishHandler}>
-              Finish
+            <button className="ui inverted button btn" onClick={this.finishHandler}>
+              Rätta Quizet
             </button>
           )}
         </div>

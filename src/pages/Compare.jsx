@@ -5,7 +5,6 @@ import React, { Component } from 'react';
   } from 'recharts';
 
 
-
 class Compare extends Component {
     state = {  }
     render() { 
@@ -22,13 +21,16 @@ class Compare extends Component {
           Price: parseFloat(data.quotes.USD.price)
         })
       )
+
       console.log(series[0]);
 
         return ( 
           <div>
          <h1>Jämför de 10 mest populära kryptovalutorna!</h1>
-          <div>
+          <div className="box medium">
             <h2>Pris i USD</h2>
+         <p>När du tittar på det här diagrammet så ser du att en Bitcoin är värd mycket, mycket mer än många andta kryptovalutor.</p>
+            
               <BarChart
                 width={500}
                 height={500}
@@ -42,9 +44,10 @@ class Compare extends Component {
                 <YAxis type="number" domain={[0, 8500]}  allowDataOverflow="true" interval="preseveStart"/>
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="Price" fill="pink" />
+                <Bar dataKey="Price" fill="#f7578e" />
               </BarChart>
           </div>
+
       </div>
          );
     }

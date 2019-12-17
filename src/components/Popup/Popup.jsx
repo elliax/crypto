@@ -7,8 +7,9 @@ class Popup extends Component {
         return ( 
             <div className='popup'>  
                 <div className='popupCon'>  
-                    <h1>Welcome to the quiz!</h1>  
-                    <button onClick={this.props.closePopup}>Start Quiz!</button>  
+                    <h1>Välkommen till quizet!</h1>  
+                    <p>Känner du dig redo att testa dina kunskaper om kryptovalutor?</p>
+                    <button className="quizBtn" onClick={this.props.closePopup}>Starta Quizet!</button>  
                 </div>  
             </div>  
          );

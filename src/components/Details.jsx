@@ -26,33 +26,37 @@ class Table extends Component {
                 <div className="content">
                  {thisCurrency.map(index =>(
                  <div className="box medium">
-                    <h1>{index.Name}</h1>
+                    <h1 className="cryptoName">{index.Name}</h1>
                     <p>{index.Symbol}</p>
-                    <p>{index.description}</p>
+                    <h2>Valutans förändring de senaste 12 månaderna:</h2>
+              <Chart thisCurrency={thisCurrency}/>
                 </div>
               ))}
 
                  {thisCurrency.map(index =>(
                  <div className="box medium highlight">
-                  <p onChange={changeColor(index.quotes.USD.percentage_change_24h)} >
-                        <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
-                    </p>
-                 <table>
+                 <table className="detailsTable">
                      <tbody>
+                     <tr>
+                             <td>Förändring (24h):</td>
+                             <td onChange={changeColor(index.quotes.USD.percentage_change_24h)}>
+                        <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
+                             </td>
+                        </tr>
                          <tr>
-                             <td>Price:</td>
+                             <td>Pris:</td>
                              <td>${index.quotes.USD.price}</td>
                         </tr>
                         <tr>
-                             <td>Market Cap:</td>
+                             <td>Börsvärde:</td>
                              <td>{index.quotes.USD.market_cap}</td>
                         </tr>
                         <tr>
-                             <td>Volume 24h:</td>
+                             <td>Volym (24h):</td>
                              <td>{index.quotes.USD.volume_24h}</td>
                         </tr>
                         <tr>
-                             <td>Total Supply:</td>
+                             <td>Utbud:</td>
                              <td>{index.total_supply}</td>
                         </tr>
 
@@ -63,13 +67,7 @@ class Table extends Component {
                     
                 </div>
               ))}
-              <div className="box medium">
-              <h2>Valutans förändring de senaste 12 månaderna:</h2>
-              <Chart thisCurrency={thisCurrency}/>
-              </div>
-              
-           <div className="box small">
-                </div>
+         
                 </div>
           
               

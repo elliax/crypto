@@ -1,8 +1,13 @@
-$color-darkgrey: #282c34;
+$color-darkgrey: #313131;
 $color-lightgrey: #d3d3d3;
 $color-white: #ffffff;
-$color-teal: #09d3ac;
-$color-pink: #c569a2;
+$color-teal: #a5d6e4;
+$color-pink: #f7578e;
+$color-grey: #707070;
+$color-blue: #210a72;
+$color-orange:  #f7b58b;
+$color-green: #57f1b1;
+$text: #ffffff;
 
 
 ul {
@@ -16,6 +21,7 @@ ul {
    flex-direction: row;
    width: 90vw;
    height: 80vh;
+   
 }
 
 .TabList {
@@ -44,7 +50,7 @@ ul {
     &--selected {
       
         border-color: #aaa !important;
-        color:#d45d77 !important;
+        color: $color-green !important;
       }
 }
 
@@ -52,9 +58,10 @@ ul {
 
         padding: 20px;
         display: flex;
-        background-color: rgba($color: #ffffff, $alpha: 0.1);
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
         width: 70vw;
-       
+        color: black;
+
         h2 {
             
             min-width: 100%;
@@ -65,17 +72,65 @@ ul {
      width: 65vw;
     position: absolute;
     left: 27vw;
+    height: 100%;
+    height: 75%;
+    overflow: scroll;
+    overflow-x: hidden;
     
+    p {
+        text-align: left;
+    }
     
  }
 
- .TabBtn--selected {
-    background: #fff;
-    border-color: #aaa;
-    color: black;
-    border-radius: 5px 5px 0 0;
-  }
 
   .react-tabs__tab--selected {
-    color: $color-pink !important;
+    color: $color-green !important;
+    
   }
+
+  .ordlista {
+    text-align: left;
+
+    tr{
+        
+        height: 7vh;
+
+        td {
+            border: none;
+            padding: 5px;
+        }
+    }
+    tr:nth-child(odd){
+        background-color: $color-green;
+    }
+    tr:nth-child(even){
+        background-color: $color-teal;
+    }
+
+
+   
+}
+
+.proCon {
+    text-align: left;
+    width: 70%;
+    margin: auto;
+
+    td{
+        width: 50%;
+        padding: 7px;
+    }
+    tr:nth-child(odd){
+        background-color: $color-green;
+    }
+    tr:nth-child(even){
+        background-color: $color-teal;
+    }
+}
+
+.howToUse {
+    text-align: left;
+    list-style-type: circle !important;
+    
+}

@@ -1,5 +1,5 @@
 #root {
-  background-color: #4f4f50;
+  background-color: #313131;
   color: #ffffff;
   min-height: 100vh;
   margin: 0;
@@ -23,7 +23,7 @@
   text-transform: uppercase;
   font-weight: 600;
   height: 5vh;
-  border-bottom: solid 2px #3b89ad;
+  border-bottom: solid 2px #a5d6e4;
 }
 
 .Table .row {
@@ -36,7 +36,7 @@
 }
 
 .Table .row:nth-child(even) {
-  background-color: #8d8c8c;
+  background-color: #707070;
 }
 
 .header {
@@ -55,6 +55,7 @@
   margin: auto;
   font-size: 1.5em;
   border-bottom: solid black 1px;
+  background-color: #a5d6e4;
 }
 
 .header .logo {
@@ -85,22 +86,21 @@
 
 .header .Menu li {
   text-align: center;
-  margin: auto 10px 8px 10px;
+  margin: auto 12px 8px 12px;
 }
 
 .header .Menu .link {
-  color: #d3d3d3;
+  color: black;
 }
 
 .header .Menu .link :hover {
-  color: #ffffff;
+  color: #f7578e;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
 
 .header .Menu .active {
-  color: #ffffff;
-  border-bottom: #3b89ad solid 3px;
+  border-bottom: #f7578e solid 3px;
 }
 
 .content {
@@ -155,11 +155,20 @@
   width: 95%;
 }
 
+.cryptoName {
+  background-color: #57f1b1;
+  width: 70%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #210a72;
+}
+
 .cta-button {
   margin-top: 20px;
   min-width: 90%;
   height: 5vh;
-  background-color: #3b89ad;
+  background-color: #f7578e;
   border-radius: 50px;
   color: #ffffff;
   font-size: 20px;
@@ -175,11 +184,12 @@
 }
 
 .pos {
-  background-color: #3b89ad;
+  background-color: #57f1b1;
+  color: black !important;
 }
 
 .neg {
-  background-color: #ff5da9;
+  background-color: #f7578e;
 }
 
 .detail {
@@ -199,8 +209,20 @@
 }
 
 .arrowLink :hover {
-  color: #ff5da9;
+  color: #f7578e;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.detailsTable {
+  width: 80%;
+}
+
+.detailsTable tr {
+  height: 3vh;
+}
+
+.detailsTable tr td {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

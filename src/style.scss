@@ -1,9 +1,12 @@
-$color-darkgrey: #4f4f50;
+$color-darkgrey: #313131;
 $color-lightgrey: #d3d3d3;
 $color-white: #ffffff;
-$color-teal: #3b89ad;
-$color-pink: #ff5da9;
-$color-grey: #8d8c8c;
+$color-teal: #a5d6e4;
+$color-pink: #f7578e;
+$color-grey: #707070;
+$color-blue: #210a72;
+$color-orange:  #f7b58b;
+$color-green: #57f1b1;
 $text: #ffffff;
 
 #root {
@@ -56,6 +59,7 @@ $text: #ffffff;
     margin: auto;
     font-size: 1.5em;
     border-bottom: solid black 1px;
+    background-color: $color-teal;
 
     .logo {
         height: 9vh;
@@ -75,20 +79,20 @@ $text: #ffffff;
         }
         li {
             text-align: center;
-            margin: auto 10px 8px 10px;
+            margin: auto 12px 8px 12px;
         }
 
         .link {
-            color: $color-lightgrey;
+            color: black;
 
             :hover {
-                color:  $text;
+                color:  $color-pink;
                 transition-duration: 0.5s;
             }
         }
         .active {
-            color: $text;
-            border-bottom: $color-teal solid 3px;
+            
+            border-bottom: $color-pink solid 3px;
         }
     }
   }
@@ -130,11 +134,19 @@ $text: #ffffff;
       }
   }
 
+  .cryptoName {
+      background-color: $color-green;
+      width: 70%;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      color: $color-blue;
+  }
   .cta-button {
       margin-top: 20px;
       min-width: 90%; 
       height: 5vh;
-      background-color: $color-teal;
+      background-color: $color-pink;
       border-radius: 50px;
       color: $text;
       font-size: 20px;
@@ -150,11 +162,14 @@ $text: #ffffff;
   }
 
   .pos {
-      background-color: $color-teal;
+    background-color: $color-green;
+    color: black !important;
   }
 
   .neg {
-      background-color: $color-pink;
+    background-color: $color-pink;
+    
+      
   }
 
   .detail {
@@ -181,5 +196,17 @@ $text: #ffffff;
         
       }
   }
+
+.detailsTable {
+    width: 80%;
+
+    tr {
+        height: 3vh;
+
+    td {
+    width: 50%;
+    }
+    }
+}
 
 

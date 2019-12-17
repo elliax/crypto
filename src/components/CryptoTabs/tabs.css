@@ -55,7 +55,7 @@ ul {
 
 .TabBtn--selected {
   border-color: #aaa !important;
-  color: #d45d77 !important;
+  color: #57f1b1 !important;
 }
 
 .Panel {
@@ -63,8 +63,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 70vw;
+  color: black;
 }
 
 .Panel h2 {
@@ -75,16 +76,62 @@ ul {
   width: 65vw;
   position: absolute;
   left: 27vw;
+  height: 100%;
+  height: 75%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-.TabBtn--selected {
-  background: #fff;
-  border-color: #aaa;
-  color: black;
-  border-radius: 5px 5px 0 0;
+.PanelContent p {
+  text-align: left;
 }
 
 .react-tabs__tab--selected {
-  color: #c569a2 !important;
+  color: #57f1b1 !important;
+}
+
+.ordlista {
+  text-align: left;
+}
+
+.ordlista tr {
+  height: 7vh;
+}
+
+.ordlista tr td {
+  border: none;
+  padding: 5px;
+}
+
+.ordlista tr:nth-child(odd) {
+  background-color: #57f1b1;
+}
+
+.ordlista tr:nth-child(even) {
+  background-color: #a5d6e4;
+}
+
+.proCon {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+
+.proCon td {
+  width: 50%;
+  padding: 7px;
+}
+
+.proCon tr:nth-child(odd) {
+  background-color: #57f1b1;
+}
+
+.proCon tr:nth-child(even) {
+  background-color: #a5d6e4;
+}
+
+.howToUse {
+  text-align: left;
+  list-style-type: circle !important;
 }
 /*# sourceMappingURL=tabs.css.map */
