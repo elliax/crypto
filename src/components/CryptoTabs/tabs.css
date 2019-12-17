@@ -104,11 +104,11 @@ ul {
 }
 
 .ordlista tr:nth-child(odd) {
-  background-color: #57f1b1;
+  background-color: #d3d3d3;
 }
 
 .ordlista tr:nth-child(even) {
-  background-color: #a5d6e4;
+  background-color: #f7b58b;
 }
 
 .proCon {
@@ -123,11 +123,11 @@ ul {
 }
 
 .proCon tr:nth-child(odd) {
-  background-color: #57f1b1;
+  background-color: #d3d3d3;
 }
 
 .proCon tr:nth-child(even) {
-  background-color: #a5d6e4;
+  background-color: #f7b58b;
 }
 
 .howToUse {

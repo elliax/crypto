@@ -148,7 +148,7 @@ class CryptoTabs extends Component {
                         <p>
                         Hos Bitcoin, till exempel, styr en krypteringsteknik som innehåller två olika krypteringsnycklar. En nyckel krypterar och den andra nyckeln dekrypterar.  Krypteringsnyckeln är offentlig, den sprider du fritt. Krypteringsnyckeln är din Bitcoinadress. Dekrypteringsnyckeln är privat. Bara du som äger dekrypteringsnyckeln kan dekryptera meddelanden till Bitcoinadressen. Om du tappar bort din dekrypteringsnyckel förlorar du tillgång till din Bitcoinadress för alltid.
                         </p>
-                        <h3>Traransaktioner</h3>
+                        <h3>Transaktioner</h3>
                         <p>
                         Om du vill skicka pengar till din kompis skapar du en transaktion. Din transaktion signerar du med din privata nyckel och publicerar den sen till nätverket. Alla noder i nätverket känner då till transaktionen. När nätverket är överens om transaktionen får din kompis sina pengar.
                         </p>
