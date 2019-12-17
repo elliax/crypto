@@ -3,17 +3,17 @@
   "name": "Learn about cryptocurrencies",
   "icons": [
     {
-      "src": "/cryptomate/src/img/LoggaCryptoMate.png",
+      "src": "./cryptomate/src/img/LoggaCryptoMate.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/cryptomate/src/img/LoggaCryptoMate.png",
+      "src": "./cryptomate/src/img/LoggaCryptoMate.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/cryptomate/src/img/LoggaCryptoMate.png",
+      "src": "./cryptomate/src/img/LoggaCryptoMate.png",
       "type": "image/png",
       "sizes": "512x512"
     }

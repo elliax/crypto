@@ -94,7 +94,7 @@ class Quiz extends React.Component {
                 </li>
               ))}
             </ol>
-          <a className="ui button btn" href="/">Gå tillbaka till startsidan</a> <a className="ui button btn" href="/quiz">Testa igen</a> 
+          <a className="ui button btn" href="/">Gå tillbaka till startsidan</a> <a className="ui button btn" href="./quiz">Testa igen</a> 
         </div>
       );
     } else {

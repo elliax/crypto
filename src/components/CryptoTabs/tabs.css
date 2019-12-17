@@ -95,6 +95,7 @@ ul {
 }
 
 .ordlista tr {
+  line-height: 130%;
   height: 7vh;
 }
 
@@ -120,6 +121,7 @@ ul {
 .proCon td {
   width: 50%;
   padding: 7px;
+  line-height: 120%;
 }
 
 .proCon tr:nth-child(odd) {
