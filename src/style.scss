@@ -10,7 +10,7 @@ $color-green: #57f1b1;
 $text: #ffffff;
 
 #root {
-    background-color: $color-darkgrey;
+    background-color: $color-grey;
     color: $text;
     min-height: 100vh;
     margin: 0;
@@ -33,7 +33,7 @@ $text: #ffffff;
             font-weight: 600;
             height: 5vh;
             
-            border-bottom: solid 2px $color-teal;
+            border-bottom: solid 2px $color-orange;
         }
       .row {
         height: 5vh;
@@ -45,7 +45,7 @@ $text: #ffffff;
           
       }
       .row:nth-child(even) {
-          background-color: $color-grey;
+          background-color: $color-darkgrey;
           
       }
   }
