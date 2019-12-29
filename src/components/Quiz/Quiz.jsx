@@ -89,9 +89,15 @@ class Quiz extends React.Component {
             </p>
             <ol className="quizResultat">
               {quizData.map((item, index) => (
+                <div>
                 <li className={this.state.class} key={index}>
+                  {item.question}
+                  
+                  </li>
+                  <p>
                   {item.answer}
-                </li>
+                    </p>
+                  </div>
               ))}
             </ol>
           <a className="ui button btn" href="/">Gå tillbaka till startsidan</a> <a className="ui button btn" href="/quiz">Testa igen</a> 

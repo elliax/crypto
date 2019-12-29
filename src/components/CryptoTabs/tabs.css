@@ -53,11 +53,6 @@ ul {
           justify-content: center;
 }
 
-.TabBtn--selected {
-  border-color: #aaa !important;
-  color: #57f1b1 !important;
-}
-
 .Panel {
   padding: 20px;
   display: -webkit-box;
@@ -88,6 +83,12 @@ ul {
 
 .react-tabs__tab--selected {
   color: #57f1b1 !important;
+}
+
+.TabBtn:hover {
+  color: #313131 !important;
+  cursor: pointer;
+  background-color: #57f1b1;
 }
 
 .ordlista {

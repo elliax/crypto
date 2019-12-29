@@ -26,7 +26,7 @@ $text: #ffffff;
 }
 
 .quizResultat {
-
+    
     background-color: #210a72;
     border-radius: 0 0 5px 5px;
     text-align: left;
@@ -34,8 +34,16 @@ $text: #ffffff;
     margin: auto;
     margin-bottom: 2vh;
     padding-bottom: 10px;
+    font-weight: 100;
     li {
         padding: 5px;
+    }
+
+    p {
+        margin-top: -5px !important;
+        margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        font-weight: 700;
     }
 }
 

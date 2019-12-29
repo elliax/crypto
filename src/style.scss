@@ -26,19 +26,28 @@ $text: #ffffff;
       margin: 5vw;
       width: 90vw;
       border-collapse: collapse;
-        text-align: center;
+    text-align: left;
+    
 
         th {
             text-transform: uppercase;
             font-weight: 600;
             height: 5vh;
-            
+            padding-left: 5px;
             border-bottom: solid 2px $color-orange;
+
+            .svg-inline--fa {
+                color: $color-orange;
+                margin-left: 10px;
+            }
+        }
+        td {
+            padding-left: 5px;
         }
       .row {
         height: 5vh;
         font-weight: 100;
-
+        
           img {
               max-height: 4.5vh;
           }
@@ -164,11 +173,12 @@ $text: #ffffff;
   .pos {
     background-color: $color-green;
     color: black !important;
+    text-align: center;
   }
 
   .neg {
     background-color: $color-pink;
-    
+    text-align: center;
       
   }
 
@@ -207,6 +217,20 @@ $text: #ffffff;
     width: 50%;
     }
     }
+
+    .svg-inline--fa {
+        color: $color-orange;
+        margin-left: 10px;
+    }
 }
 
+.coin {
+    width: 40% !important;
+}
 
+.tooltip {
+    text-decoration: underline #57f1b1 ;
+}
+.MuiTooltip-tooltip {
+    font-size: 14px !important;
+}

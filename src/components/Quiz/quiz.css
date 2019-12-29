@@ -21,10 +21,18 @@
   margin: auto;
   margin-bottom: 2vh;
   padding-bottom: 10px;
+  font-weight: 100;
 }
 
 .quizResultat li {
   padding: 5px;
+}
+
+.quizResultat p {
+  margin-top: -5px !important;
+  margin-bottom: 10px !important;
+  margin-left: 0px !important;
+  font-weight: 700;
 }
 
 .result {

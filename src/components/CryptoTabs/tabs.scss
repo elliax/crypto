@@ -47,11 +47,9 @@ ul {
     align-items: center;
     justify-content: center;
 
-    &--selected {
-      
-        border-color: #aaa !important;
-        color: $color-green !important;
-      }
+
+
+
 }
 
 .Panel {
@@ -87,6 +85,12 @@ ul {
   .react-tabs__tab--selected {
     color: $color-green !important;
     
+  }
+
+  .TabBtn:hover {
+      color: #313131 !important;
+      cursor: pointer;
+      background-color: #57f1b1;
   }
 
   .ordlista {
