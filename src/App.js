@@ -33,7 +33,7 @@ class App extends Component {
     return (  
     <Router>
       <div className="App">
-        <Menu/>
+        <Menu/> 
         <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>
