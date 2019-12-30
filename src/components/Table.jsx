@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
-//import Tooltip from '@material-ui/core/Tooltip';
+
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import NumberFormat from 'react-number-format';
@@ -36,32 +36,21 @@ class Table extends Component {
           <thead>
               
               
-          <Tooltip arrow placement="top" title="Lorem Ipsum" interactive >
               <th>Namn 
                   <FontAwesomeIcon icon={faQuestionCircle} /> 
                   </th>
-              </Tooltip>
-              <Tooltip  arrow placement="top" title="Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet."  >
                 <th>Börsvärde
                 <FontAwesomeIcon icon={faQuestionCircle} /> 
                 </th>
-              </Tooltip>
-
-              <Tooltip arrow placement="top" title="Lorem Ipsum"  >
               <th>Pris (USD)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
-              </Tooltip>
-              <Tooltip arrow placement="top" title="Lorem Ipsum"  >              
               <th>Volym (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
-              </Tooltip>
-              <Tooltip arrow placement="top" title="Lorem Ipsum"  >                            
               <th>Trend (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
-              </Tooltip>
               <th></th>
           </thead>
           <tbody>

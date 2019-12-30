@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Chart from './Chart';
 import coin from '../img/Coin.png';
-//import Tooltip from '@material-ui/core/Tooltip';
+
 import NumberFormat from 'react-number-format';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -55,36 +55,26 @@ class Table extends Component {
                  <table className="detailsTable">
                      <tbody>
                      <tr>
-                         <Tooltip arrow placement="left" title="Lorem Ipsum">
                              <td><FontAwesomeIcon icon={faQuestionCircle} />  Förändring (24h): </td>
-                        </Tooltip>
                              <td onChange={changeColor(index.quotes.USD.percentage_change_24h)}>
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
                              </td>
                         </tr>
                          <tr>
-                         <Tooltip arrow placement="left" title="Så mycket är en enhet av kryptovalutan värd"   >
                             <td><FontAwesomeIcon icon={faQuestionCircle} />  Pris:</td>
-                        </Tooltip>
                              <td><NumberFormat value={index.quotes.USD.price} prefix={'$'} displayType={'text'} decimalScale={3}/></td>
                         </tr>
                         <tr>
-                            <Tooltip arrow placement="left" title="Lorem Ipsum">
                              <td><FontAwesomeIcon icon={faQuestionCircle} />  Börsvärde:</td>
-                             </Tooltip>
                              <td><NumberFormat value={index.quotes.USD.market_cap} displayType={'text'} thousandSeparator={' '}/></td>
                         </tr>
                         <tr>
-                        <Tooltip arrow placement="left" title="Lorem Ipsum">
                              <td><FontAwesomeIcon icon={faQuestionCircle} />  Volym (24h):</td>
-                             </Tooltip>
                              <td><NumberFormat value={index.quotes.USD.volume_24h} displayType={'text'} thousandSeparator={' '}/></td>
                               
                         </tr>
                         <tr>
-                        <Tooltip arrow placement="left" title="Lorem Ipsum">
                              <td><FontAwesomeIcon icon={faQuestionCircle} />  Utbud:</td>
-                             </Tooltip>
                              <td><NumberFormat value={index.total_supply} displayType={'text'} thousandSeparator={' '}/></td>
                         </tr>
 
