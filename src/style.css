@@ -255,4 +255,37 @@
 .MuiTooltip-tooltip {
   font-size: 14px !important;
 }
+
+.tillbaka {
+  margin-top: 20px;
+  padding: 10px;
+  color: #313131;
+  background-color: #d3d3d3;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  position: absolute;
+  left: 30px;
+  cursor: pointer;
+}
+
+.tillbaka .svg-inline--fa {
+  margin-right: 5px;
+}
+
+.tillbaka:hover {
+  background-color: #f7b58b !important;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.tillbaka:hover .svg-inline--fa {
+  color: #57f1b1;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
 /*# sourceMappingURL=style.css.map */

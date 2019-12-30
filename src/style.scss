@@ -234,3 +234,39 @@ $text: #ffffff;
 .MuiTooltip-tooltip {
     font-size: 14px !important;
 }
+
+.tillbaka {
+    margin-top: 20px;
+     padding: 10px;
+      color: $color-darkgrey;
+      background-color: $color-lightgrey;
+      border-radius: 50px;
+      font-size: 18px;
+      border: none;
+      
+      position: absolute;
+      left: 30px;
+      
+      cursor: pointer;
+     
+      .svg-inline--fa {
+        margin-right: 5px;
+        
+    }
+}
+
+.tillbaka:hover {
+    
+    background-color: $color-orange !important;
+    transition-duration: 1s;
+    
+
+    .svg-inline--fa {
+        color: $color-green;
+        transform: translateX(-100px);
+        transition-delay: 0.3s;
+        transition-duration: 2s;
+        
+    }
+      
+}

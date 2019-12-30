@@ -58,7 +58,10 @@ class App extends Component {
           
       </div>
     </Router> );
+    console.clear();
   }
+  
 }
+console.clear();
  
 export default App;

@@ -7,6 +7,7 @@ import NumberFormat from 'react-number-format';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 class Table extends Component {
     state = { 
@@ -30,8 +31,14 @@ class Table extends Component {
 
         return (
             <React.Fragment>
-                <a href="./">go back</a> 
+                 <Link to='/crypto'>
+                        <button className="tillbaka">
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                        Tillbaka till Valutor
+                        </button>
+                    </Link>
                 <div className="content">
+                
                  {thisCurrency.map(index =>(
                  <div className="box medium">
                     <h1 className="cryptoName">{index.Name}</h1>

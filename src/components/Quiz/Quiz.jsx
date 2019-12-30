@@ -1,6 +1,9 @@
 import React from "react";
 import { quizData } from "./QuizData";
 import './quiz.css';
+import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRedo } from '@fortawesome/free-solid-svg-icons';
 
 class Quiz extends React.Component {
   state = {
@@ -100,7 +103,16 @@ class Quiz extends React.Component {
                   </div>
               ))}
             </ol>
-          <a className="ui button btn" href="/">Gå tillbaka till startsidan</a> <a className="ui button btn" href="/quiz">Testa igen</a> 
+            <Link to='/'>
+              <button className="ui button btn">Gå tillbaka till startsidan</button>
+                    </Link>
+                   
+              <button className="ui button btn" >
+              Testa igen
+              <FontAwesomeIcon icon={faRedo} />
+              </button>
+                    
+           
         </div>
       );
     } else {
