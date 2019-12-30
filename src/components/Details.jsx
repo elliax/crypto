@@ -30,7 +30,7 @@ class Table extends Component {
 
         return (
             <React.Fragment>
-                <a href="./">go back</a>
+                <a href="./">go back</a> 
                 <div className="content">
                  {thisCurrency.map(index =>(
                  <div className="box medium">
