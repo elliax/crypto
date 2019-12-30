@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Chart from './Chart';
 import coin from '../img/Coin.png';
-import Tooltip from '@material-ui/core/Tooltip';
+//import Tooltip from '@material-ui/core/Tooltip';
 import NumberFormat from 'react-number-format';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
