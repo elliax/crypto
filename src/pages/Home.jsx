@@ -8,6 +8,7 @@ class Home extends Component {
     render() { 
         return ( 
             <div className="content">
+            
                 <div className="box medium">
                     <h1>Vill du få ditt studiebidrag som en kryptovaluta?</h1>
                     <p>

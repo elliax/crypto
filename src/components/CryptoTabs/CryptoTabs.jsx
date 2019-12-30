@@ -173,6 +173,19 @@ class CryptoTabs extends Component {
                                 <th></th>
                             </thead>
                             <tbody>
+                                
+                            <tr>
+                                    <td>Blockchain (blockkedja)</td>
+                                    <td>En teknik som möjliggör omedelbara transaktioner utan inblandning av mellanhänder såsom banker.</td>
+                                </tr>
+                            <tr>
+                                    <td>Börsvärde</td>
+                                    <td>Se marknadsvärde.</td>
+                                </tr>
+                                <tr>
+                                    <td>Centralbank</td>
+                                    <td>Se Riksbanken.</td>
+                                </tr>
                                 <tr>
                                     <td>Decentraliserad</td>
                                     <td>Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation.</td>
@@ -181,46 +194,9 @@ class CryptoTabs extends Component {
                                     <td>Fiatpengar</td>
                                     <td>Ordet fiat kommer från latin och betyder ungefär "Låt det bli gjort." Fiatpengars värde grundar sig på att den institution som ger ut dessa pengar säger att de är värda något. Institutionen är i praktiken alltid en stat. De flesta valutor i världen idag är fiatpengar, till exempel våra svenska kronor. Det är lagstiftning som utgör grunden för detta penningsystem. </td>
                                 </tr>
-
-                                 <tr>
+                                <tr>
                                     <td>Kontroversiell</td>
                                     <td>Omdiskuterad, omtvistad.</td>
-                                </tr>
-                                <tr>
-                                    <td>Kryptovalutor  (förkortas ofta som Kryptos)</td>
-                                    <td>En digital valuta som använder kryptering för att skydda transaktioner (överföringar). Överföringar sker mellan användare, utan inblandning av banker.</td>
-                                </tr>
-                                <tr>
-                                    <td>Valuta</td>
-                                    <td>En form av pengar som används som betalmedel.</td>
-                                </tr>
-                                <tr>
-                                    <td>Riksbanken</td>
-                                    <td>Riksbanken är Sveriges centralbank. Riksbanken ser till att pengarna behåller sitt värde över tid och att betalningar kan ske säkert och effektivt. Riksbanken ger också ut Sveriges sedlar och mynt.</td>
-                                </tr> 
-                                <tr>
-                                    <td>Centralbank</td>
-                                    <td>Se Riksbanken.</td>
-                                </tr>
-                                <tr>
-                                    <td>Börsvärde</td>
-                                    <td>Se marknadsvärde.</td>
-                                </tr>
-                                <tr>
-                                    <td>Marknadsvärde</td>
-                                    <td>Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet.</td>
-                                </tr> 
-                                <tr>
-                                    <td>Trend</td>
-                                    <td>Visar om en kryptovaluta har stigit eller sjunkit i värde.</td>
-                                </tr>
-                                <tr>
-                                    <td>Volym (volume)</td>
-                                    <td>Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod. Ett utbyte visar oftast den egna volymen för varje krypto, oftast som procentandel av det totala värdet som utbyts.</td>
-                                </tr>
-                                <tr>
-                                    <td>Virtuell valuta</td>
-                                    <td>Elektroniska pengar eller digitala pengar, oftast kryptovalutor, som används som betalningsmedel.</td>
                                 </tr>
                                 <tr>
                                     <td>Kryptering</td>
@@ -230,10 +206,42 @@ class CryptoTabs extends Component {
                                     <td>Krypto</td>
                                     <td>Ett hemligt språk eller kod som gör ett meddelande oläsligt för utomstående.</td>
                                 </tr>
+                                 
                                 <tr>
-                                    <td>Blockchain (blockkedja)</td>
-                                    <td>En teknik som möjliggör omedelbara transaktioner utan inblandning av mellanhänder såsom banker.</td>
+                                    <td>Kryptovalutor  (förkortas ofta som Kryptos)</td>
+                                    <td>En digital valuta som använder kryptering för att skydda transaktioner (överföringar). Överföringar sker mellan användare, utan inblandning av banker.</td>
                                 </tr>
+                                <tr>
+                                    <td>Marknadsvärde</td>
+                                    <td>Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet.</td>
+                                </tr> 
+                                <tr>
+                                    <td>Riksbanken</td>
+                                    <td>Riksbanken är Sveriges centralbank. Riksbanken ser till att pengarna behåller sitt värde över tid och att betalningar kan ske säkert och effektivt. Riksbanken ger också ut Sveriges sedlar och mynt.</td>
+                                </tr> 
+                                 
+                                <tr>
+                                    <td>Trend</td>
+                                    <td>Visar om en kryptovaluta har stigit eller sjunkit i värde.</td>
+                                </tr>
+                                <tr>
+                                    <td>Valuta</td>
+                                    <td>En form av pengar som används som betalmedel.</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Virtuell valuta</td>
+                                    <td>Elektroniska pengar eller digitala pengar, oftast kryptovalutor, som används som betalningsmedel.</td>
+                                </tr>
+                                
+                               
+                                <tr>
+                                    <td>Volym (volume)</td>
+                                    <td>Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod. Ett utbyte visar oftast den egna volymen för varje krypto, oftast som procentandel av det totala värdet som utbyts.</td>
+                                </tr>
+                                
+                             
+                                
                             </tbody>
                         </table>
                     </div>  
