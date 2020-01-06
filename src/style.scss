@@ -228,6 +228,18 @@ $text: #ffffff;
     width: 40% !important;
 }
 
+.compare {
+    width: 15% !important;
+    margin: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.compare:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
 .tooltip {
     text-decoration: underline #57f1b1 ;
 }
@@ -269,4 +281,11 @@ $text: #ffffff;
         
     }
       
+}
+
+.invest {
+    width: 80%;
+    margin: 20px;
+   
+   
 }

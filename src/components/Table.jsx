@@ -5,6 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 import NumberFormat from 'react-number-format';
 import { Tooltip } from '@material-ui/core';
+import Invest from '../img/invest.png';
 
 
 class Table extends Component {
@@ -29,28 +30,45 @@ class Table extends Component {
 
         return (
             <React.Fragment>
-       <Tooltip title="Add" arrow>
-  <p>hej</p>
-</Tooltip>
+        
           <table className="Table">
           <thead>
               
+       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
               
               <th>Namn 
                   <FontAwesomeIcon icon={faQuestionCircle} /> 
                   </th>
+</Tooltip>
+                  
+       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+                  
                 <th>Börsvärde
                 <FontAwesomeIcon icon={faQuestionCircle} /> 
                 </th>
+</Tooltip>
+                
+       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+                
               <th>Pris (USD)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
+</Tooltip>
+              
+       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+              
               <th>Volym (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
+</Tooltip>
+              
+       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+              
               <th>Trend (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
+</Tooltip>
+              
               <th></th>
           </thead>
           <tbody>
@@ -75,6 +93,8 @@ class Table extends Component {
           
           </tbody>
           </table>
+          
+          
           </React.Fragment>
          );
     }

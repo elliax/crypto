@@ -3,6 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import './tabs.css';
 import {NavLink} from 'react-router-dom';
+import Invest from '../../img/invest.png';
+import Pay from '../../img/pay.png';
+import Wallet from '../../img/wallet.png';
+
 
 class CryptoTabs extends Component {
     state = {  }
@@ -24,6 +28,7 @@ class CryptoTabs extends Component {
                  <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Varför ska du bry dig om kryptovalutor?</h2>
+                        <img className="invest" src={Invest} alt=""/>
                         <p>Så länge Sveriges lagar säger att kontanter är ett lagligt betalmedel kommer kontanter finnas kvar. Men när Riksbanken undersöker Svenskarnas betalningsvanor 2018 så visar det sig att vi använder mer och mer elektroniska betalningsmedel. Bankkortet använder vi mest att betala med. Om fem till sex år kommer vi nästan vara ett kontantlöst samhälle. 
                                 <br/><br/>
                             Att betala med kort är enkelt och bekvämt för konsumenter, handeln och banker. Men vi behöver ha tillgång till el, internet och teknik. Bankerna vill att vi betalar mer med kort. Bankerna tjänar mer pengar på kortbetalningar. Stater, banker och kortföretag kontrollerar systemet av pengar i världen idag. Det betyder att de vet exakt hur och när pengar flyttas. 
@@ -39,6 +44,8 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Vad är en kryptovaluta?</h2>
+                        <img className="invest" src={Wallet} alt=""/>
+                        
                         <p>Kryptovalutor är digitala pengar för en global och digital värld. Du skickar pengar från person till person utan att be om lov, utan att bli övervakad, och pengarna kommer fram på en gång.
                             <br/><br/>
                             Kryptovalutor är öppet för alla att använda och stater, banker eller företag kontrollerar inte användningen, som de gör med våra vanliga pengar. Kryptovalutor har ingen fysisk form som traditionella kontanter.
@@ -56,6 +63,8 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Hur kan du använda kryptovalutor?</h2>
+                        <img className="invest" src={Pay} alt=""/>
+                        
                         <p>Idag använder människor kryptovalutor till att:</p>
                        <ul className="howToUse">
                            <li>- Köpa och sälja saker på nätet</li>

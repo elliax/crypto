@@ -13,6 +13,7 @@ import QuizPage from './pages/QuizPage';
 
 
 
+console.clear();
 class App extends Component {
   state = { 
     cryptoData:[],
@@ -47,7 +48,7 @@ class App extends Component {
         <Route 
           path="/compare" 
           render={props => (
-            <Compare {...props} chartData={this.state.cryptoData} />
+            <Compare {...props} cryptoData={this.state.cryptoData} />
           )}/>
         <Route path="/crypto/:Symbol" component={cryptoDetails}/>
         
@@ -58,10 +59,10 @@ class App extends Component {
           
       </div>
     </Router> );
-    console.clear();
+    
   }
   
 }
-console.clear();
+
  
 export default App;

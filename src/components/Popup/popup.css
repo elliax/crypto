@@ -14,7 +14,7 @@
   top: 10vh;
   left: 20vw;
   width: 60vw;
-  height: 50vh;
+  min-height: 60vh;
   margin: auto;
   border-radius: 20px;
   background: #f7b58b;
@@ -41,5 +41,72 @@
   padding: 15px;
   border-radius: 15px;
   border: none;
+}
+
+.compareCon {
+  width: 80vw;
+  min-height: 80vh;
+  position: fixed;
+  left: 10vw;
+  background-color: #707070;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 30px;
+}
+
+.compareCon .table {
+  text-align: left;
+  width: 60%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.compareCon .table th {
+  background-color: #210a72;
+  color: #57f1b1;
+  padding: 5px;
+  font-weight: 100;
+}
+
+.compareCon .table td {
+  width: 50%;
+  padding: 5px;
+}
+
+.compareCon .table tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.compareCon .illustration {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 45%;
+  z-index: -10;
+}
+
+.closeBtn {
+  font-size: 200%;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.closeBtn :hover {
+  color: #f7578e;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.QuizImg {
+  width: 80%;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=popup.css.map */

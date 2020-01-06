@@ -1,72 +1,91 @@
 import React, { Component } from 'react';
+import '../components/Popup/popup.css';
+import Popup from '../components/Popup/Popup';
+import Chart from '../components/Chart';
+import Cat from '../img/cat.png';
+import Stats from '../img/stats.png';
 
-  import {
-    LineChart, Line, PieChart, Pie, Legend, Tooltip,  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, 
-  } from 'recharts';
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
 class Compare extends Component {
-    state = {  }
+    state = {  
+     showPopup: false,
+     popupContent: ''
+    }
+
+   
+
+    popup = (name, id) => {
+      this.setState({
+        showPopup: true,
+        popupContent: [name, id]
+      })
+      console.log(name);
+      
+    }
     render() { 
-      let chartData = this.props.chartData.slice(0, 10);  
-      let series = [
-        {
-          name: "USD",
-          data: []
-        }
-      ];
-      chartData.map(data =>
-        series[0].data.push({
-          Symbol: data.Symbol,
-          Price: parseFloat(data.quotes.USD.price),
-          Supply: parseInt(data.total_supply),
-          Max: parseInt(data.max_supply)
-        })
-      )
-
-      console.log(series[0]);
-
+      
+      let allCurrency = this.props.cryptoData;
         return ( 
           <div>
-         <h1>Jämför de 10 mest populära kryptovalutorna!</h1>
-          <div className="box medium">
-            <h2>Pris i USD</h2>
-         <p>När du tittar på det här diagrammet så ser du att en Bitcoin är värd mycket, mycket mer än många andra kryptovalutor.</p>
-            
-              <BarChart
-                width={800}
-                height={500}
-                data={series[0].data}
-                margin={{
-                  top: 5, right: 30, left: 20, bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="" />
-                <XAxis dataKey="Symbol" />
-                <YAxis type="number" domain={[0, 8500]}  allowDataOverflow="true" interval="preseveStart"/>
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="Price" name="Pris" fill="#f7578e" />
-              </BarChart>
+            <h1>Jämför kryptovalutor</h1>
+            <p>Klicka på en valuta för att jämföra med det tre mest värdefulla valutorna.</p>
+              {allCurrency.slice(0, 10).map(index =>(
+            <img 
+            className="coin compare" 
+            src={require(`../img/coins/${index.Symbol}.png`)} 
+            alt={index.Name}
+            onClick={() => this.popup(index.Name, index.id)}/>
+                
+              ))}
 
-                <p>Här ser du samma diagram som ovan, fast mycket mer inzoomad. Därför är värdet på Bitcoin långt över vart diagrammet slutar här.</p>
-               <BarChart
-                width={800}
-                height={500}
-                data={series[0].data}
-                margin={{
-                  top: 5, right: 30, left: 20, bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="" />
-                <XAxis dataKey="Symbol" />
-                <YAxis type="number" domain={[0, 250]}  allowDataOverflow="true" interval="preseveStart"/>
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="Price" name="Pris" fill="#f7578e" />
-              </BarChart>
-          </div>
+               {
+          this.state.showPopup? 
+          <div className='popup'>  
+          <div className='popupCon compareCon'> 
+          <FontAwesomeIcon icon={faTimes} onClick={() =>this.setState({showPopup: false})} className="closeBtn"/> 
+          <h1 className="cryptoName">{this.state.popupContent[0]}</h1>
+          <table className="table pop">
+            <thead>
+              <th>Namn</th>
+              <th>Värde</th>
+            </thead>
+            <tbody>
+              {allCurrency.slice((this.state.popupContent[1]-1), this.state.popupContent[1]).map(index => 
+              <tr>
+                <td>{index.Name}</td>
+                <td>${index.quotes.USD.price}</td>
+              </tr>
+              
+              
+              )}
+              
+            </tbody>
+          </table>
+          <table className="table pop">
+            <thead>
+              <th>Namn</th>
+              <th>Värde</th>
+            </thead>
+            <tbody>
+              {allCurrency.slice(0, 3).map(index => 
+              <tr>
+                <td>{index.Name}</td>
+                <td>${index.quotes.USD.price}</td>
+              </tr>
+              
+              
+              )}
 
+              
+              
+            </tbody>
+          </table>
+          <img className="illustration" src={Stats} alt="" />
+          
+          </div>  
+      </div>    : null
+        }
       </div>
          );
     }
