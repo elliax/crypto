@@ -97,7 +97,7 @@ class Quiz extends React.Component {
                   {item.question}
                   
                   </li>
-                  <p>
+                  <p className="answer">
                   {item.answer}
                     </p>
                   </div>
@@ -107,10 +107,12 @@ class Quiz extends React.Component {
               <button className="ui button btn">Gå tillbaka till startsidan</button>
                     </Link>
                    
+              <Link to='/quiz'>
               <button className="ui button btn" >
               Testa igen
               <FontAwesomeIcon icon={faRedo} />
               </button>
+              </Link>
                     
            
         </div>

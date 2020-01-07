@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import avatar from '../img/AvatarCM.png';
-import coin from '../img/Coin.png';
+import Money from '../img/money.png';
+
 
 class Home extends Component {
     state = {  }
@@ -9,7 +10,7 @@ class Home extends Component {
         return ( 
             <div className="content">
             
-                <div className="box medium">
+                <div className="box small">
                     <h1>Vill du få ditt studiebidrag som en kryptovaluta?</h1>
                     <p>
                     Använder du kontanter eller Swish idag? Har du alla dina pengar på ett konto och betalar med kort? Isåfall är steget till kryptovaluta inte så långt. Många affärer och företag tar idag emot kryptovalutor som betalning, och det är lätt att växla till sig kryptovalutor på internet.
@@ -20,8 +21,8 @@ class Home extends Component {
                         <button className="cta-button">Lär dig mer!</button>
                     </Link>
                 </div>
-                <div className="box medium">
-                    <img src={avatar} alt=""/>
+                <div className="box big">
+                    <img src={Money} alt=""/>
                 </div>
             </div>
          );

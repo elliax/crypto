@@ -80,8 +80,12 @@
   padding: 5px;
 }
 
-.compareCon .table tr:nth-child(even) {
+.compareCon .table tr:nth-child(odd) {
   background-color: #d3d3d3;
+}
+
+.compareCon .table tr:nth-child(even) {
+  color: #ffffff;
 }
 
 .compareCon .illustration {
@@ -108,5 +112,9 @@
 .QuizImg {
   width: 80%;
   margin-top: 40px;
+}
+
+.chosenCoin {
+  background-color: #a5d6e4 !important;
 }
 /*# sourceMappingURL=popup.css.map */

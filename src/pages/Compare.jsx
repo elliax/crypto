@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import '../components/Popup/popup.css';
 import Popup from '../components/Popup/Popup';
-import Chart from '../components/Chart';
-import Cat from '../img/cat.png';
 import Stats from '../img/stats.png';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
@@ -47,29 +46,24 @@ class Compare extends Component {
           <h1 className="cryptoName">{this.state.popupContent[0]}</h1>
           <table className="table pop">
             <thead>
+              <th>Rank</th>
               <th>Namn</th>
-              <th>Värde</th>
+              <th>Pris (USD)</th>
             </thead>
             <tbody>
               {allCurrency.slice((this.state.popupContent[1]-1), this.state.popupContent[1]).map(index => 
-              <tr>
+              <tr className="chosenCoin">
+              <td>{index.rank}</td>
                 <td>{index.Name}</td>
                 <td>${index.quotes.USD.price}</td>
               </tr>
               
               
               )}
-              
-            </tbody>
-          </table>
-          <table className="table pop">
-            <thead>
-              <th>Namn</th>
-              <th>Värde</th>
-            </thead>
-            <tbody>
+            
               {allCurrency.slice(0, 3).map(index => 
               <tr>
+                <td>{index.rank}</td>
                 <td>{index.Name}</td>
                 <td>${index.quotes.USD.price}</td>
               </tr>
@@ -81,6 +75,8 @@ class Compare extends Component {
               
             </tbody>
           </table>
+ 
+
           <img className="illustration" src={Stats} alt="" />
           
           </div>  

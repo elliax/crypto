@@ -75,9 +75,13 @@ $text: #ffffff;
         padding: 5px;
       }
 
-      tr:nth-child(even){
+      tr:nth-child(odd){
         background-color: $color-lightgrey;
       }
+      tr:nth-child(even){
+        color: $color-white;
+      }
+     
      
     }
 
@@ -106,4 +110,8 @@ $text: #ffffff;
 .QuizImg {
   width: 80%;
   margin-top: 40px;
+}
+
+.chosenCoin {
+  background-color: $color-teal !important;
 }

@@ -70,4 +70,11 @@ $text: #ffffff;
         padding: 5px;
     }
 
+    .answer {
+        background-color: $color-teal;
+        border-radius: 5px;
+        color: $color-darkgrey;
+        font-weight: 100;
+        margin-top: 2px !important;
+    }
 }
