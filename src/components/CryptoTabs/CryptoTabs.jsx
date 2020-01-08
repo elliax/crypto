@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Tooltip } from '@material-ui/core';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import './tabs.css';
@@ -6,7 +7,7 @@ import {NavLink} from 'react-router-dom';
 import Invest from '../../img/invest.png';
 import Pay from '../../img/pay.png';
 import Wallet from '../../img/wallet.png';
-import { Tooltip } from '@material-ui/core';
+
 
 
 class CryptoTabs extends Component {
@@ -16,6 +17,7 @@ class CryptoTabs extends Component {
 
             
             <Tabs className="Tabs">
+          
                 <TabList className="TabList">
                     <Tab className="TabBtn">Varför ska du bry dig om kryptovalutor?</Tab>
                     <Tab className="TabBtn">Vad är en kryptovaluta?</Tab>
@@ -30,6 +32,7 @@ class CryptoTabs extends Component {
 
                  <TabPanel className="Panel">
                     <div className="PanelContent">
+              
                         <h2>Varför ska du bry dig om kryptovalutor?</h2>
                         <img className="invest" src={Invest} alt=""/>
                         <p>Riksbanken har gjort en undersökning som visade att Sverige kommer vara ett nästan kontantlöst samhälle om fem år. Att betala med kort istället för kontanter är enkelt och bekvämt för konsumenter och handeln. Banker vill också att vi ska betala mer med kort. Bankerna tjänar mer pengar på kortbetalningar och bankerna slipper köra ut kontanter till alla uttagsautomater i hela landet.  
@@ -47,9 +50,17 @@ class CryptoTabs extends Component {
                         <p>
                         Kryptovalutor är digitala pengar och har ingen fysisk form som traditionella kontanter. Kryptovalutor är öppet för alla att använda och stater, banker eller företag kontrollerar inte användningen, som de gör med våra vanliga pengar. Du skickar pengar från person till person utan att be om lov och utan att bli övervakad.
                         <br/><br/>
-                        Idén med en kryptovaluta är att den ska vara fri och privat. Det innebär att den är decentraliserad. Bara du kommer åt dina pengar, ingen annan.
+                        Idén med en kryptovaluta är att den ska vara fri och privat. Det innebär att den är
+                        <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation." arrow placement="top"> 
+                        <span> decentraliserad. </span>
+                        </Tooltip> 
+                        Bara du kommer åt dina pengar, ingen annan.
 
-                        Traditionella pengar som kontanter och kortpengar kallar man för Fiatpengar. Fiatpengar har inget eget värde. Staten eller handelsvaror skapar Fiatpengarna och bestämmer värdet av dem.
+                        Traditionella pengar som kontanter och kortpengar kallar man för Fiatpengar. Fiatpengar har inget eget värde. Staten eller handelsvaror skapar 
+                        <Tooltip title="De flesta valutor i världen idag är fiatpengar, till exempel våra svenska kronor. Det är lagstiftning som utgör grunden för detta penningsystem." arrow placement="top">
+                        <span> Fiatpengarna </span>
+                        </Tooltip>
+                        och bestämmer värdet av dem.
                         <br/><br/>
                         En kryptovaluta skapas istället av krypteringstekniker som reglerar användning och släppdatum. En välprogrammerad krypteringsteknik garanterar värdet och säkerställer att processen är pålitlig.
 
@@ -78,13 +89,25 @@ class CryptoTabs extends Component {
                     <div className="PanelContent">
                         <h2>Varför är kryptovalutor kontroversiellt?</h2>
                         <p>
-                            Fler och fler accepterar kryptovalutor tack vare decentralisering och frihet. Men kryptovalutor har också fått ett kontroversiellt rykte. Banker utmålar gärna kryptovalutor som onödiga risker och att kryptovalutor drar till sig kriminalitet. Andra tycker att kryptovalutor är framtiden. 
+                            Fler och fler accepterar kryptovalutor tack vare 
+                            <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation." arrow placement="top">
+                                <span> decentralisering </span>
+                            </Tooltip>
+                             och frihet. Men kryptovalutor har också fått ett 
+                             <Tooltip title="Omdiskuterad, omtvistad." arrow placement="top">
+                                <span> kontroversiellt </span>
+                             </Tooltip>
+                             rykte. Banker utmålar gärna kryptovalutor som onödiga risker och att kryptovalutor drar till sig kriminalitet. Andra tycker att kryptovalutor är framtiden. 
                             <br/><br/>
                             Riksbanken, som staten ansvarar för, och de privata bankerna, till exempel Handelsbanken, är nära sammankopplade med varandra. De privata bankerna samlar information om oss när vi betalar med kort. De vet var vi är och vad vi handlar. De privata bankerna kan neka kunder eller frysa kunders konton på mycket lösa grunder. I teorin har du lagen på din sida. Men i praktiken har det hänt att kunder har fått kämpa för sina rättigheter. 
                             <br/><br/>
                             Fördelen med kontanter och kryptovalutor är att ingen bestämmer hur du använder pengarna och ingen sparar information om oss. Eftersom kontanter fortsätter minska kan kryptovalutor vara lösningen som värnar vår frihet.
                             <br/><br/>
-                            Här i Sverige har vi haft fred så länge att vi har svårt att vi kan bli utnyttjade när vi lämnar ifrån oss information. Många länder i världen idag har totalitära regimer som utövar ett maktmissbruk och där folket inte får säga sin mening. 
+                            Här i Sverige har vi haft fred så länge att vi har svårt att vi kan bli utnyttjade när vi lämnar ifrån oss information. Många länder i världen idag har 
+                            <Tooltip title="" arrow placement="top">
+                                <span> totalitära </span>
+                            </Tooltip>
+                            regimer som utövar ett maktmissbruk och där folket inte får säga sin mening. 
                             <br/><br/>
                             Kryptovalutor utmanar både staters centralbanker och kommersiella banker. Därför har kryptovalutor blivit kontroversiellt. Ingen central auktoritet sparar din information längre.
                         </p>

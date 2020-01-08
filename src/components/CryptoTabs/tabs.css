@@ -137,4 +137,8 @@ ul {
   text-align: left;
   list-style-type: circle !important;
 }
+
+span {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=tabs.css.map */
