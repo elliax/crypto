@@ -117,7 +117,7 @@ $text: #ffffff;
 
       .box {
         padding: 25px;
-          margin: 2vh auto;
+          margin: 3vh auto;
           display: flex;
           flex-direction: column;
           color: $text;
@@ -247,7 +247,7 @@ $text: #ffffff;
     font-size: 14px !important;
 }
 
-.tillbaka {
+.btnNav {
     margin-top: 20px;
      padding: 10px;
       color: $color-darkgrey;
@@ -255,12 +255,15 @@ $text: #ffffff;
       border-radius: 50px;
       font-size: 18px;
       border: none;
-      
+      cursor: pointer;
+
+}
+
+.tillbaka {
+    
       position: absolute;
       left: 30px;
       
-      cursor: pointer;
-     
       .svg-inline--fa {
         margin-right: 5px;
         
@@ -281,6 +284,30 @@ $text: #ffffff;
         
     }
       
+}
+
+.fram {
+    position: absolute;
+    right: 30px !important;
+
+    .svg-inline--fa {
+        margin-left: 5px;
+        
+    }
+}
+
+.fram:hover {
+    background-color: $color-orange !important;
+    transition-duration: 1s;
+    
+
+    .svg-inline--fa {
+        color: $color-green;
+        transform: translateX(100px);
+        transition-delay: 0.3s;
+        transition-duration: 2s;
+        
+    }
 }
 
 .invest {

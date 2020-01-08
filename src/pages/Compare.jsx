@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../components/Popup/popup.css';
 import Popup from '../components/Popup/Popup';
 import Stats from '../img/stats.png';
+import NumberFormat from 'react-number-format';
+import {Link} from 'react-router-dom';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -43,7 +45,12 @@ class Compare extends Component {
           <div className='popup'>  
           <div className='popupCon compareCon'> 
           <FontAwesomeIcon icon={faTimes} onClick={() =>this.setState({showPopup: false})} className="closeBtn"/> 
-          <h1 className="cryptoName">{this.state.popupContent[0]}</h1>
+          {allCurrency.slice((this.state.popupContent[1]-1), this.state.popupContent[1]).map(index =>
+           <Link  className="cryptoName" to={`/crypto/${index.Symbol}`}> 
+           <h1 >{this.state.popupContent[0]}</h1>
+         </Link>
+          )}
+         
           <table className="table pop">
             <thead>
               <th>Rank</th>
@@ -55,7 +62,8 @@ class Compare extends Component {
               <tr className="chosenCoin">
               <td>{index.rank}</td>
                 <td>{index.Name}</td>
-                <td>${index.quotes.USD.price}</td>
+                <td><NumberFormat displayType={'text'} decimalScale={'2'} value={index.quotes.USD.price} prefix={'$'}></NumberFormat></td>
+                
               </tr>
               
               
@@ -65,7 +73,8 @@ class Compare extends Component {
               <tr>
                 <td>{index.rank}</td>
                 <td>{index.Name}</td>
-                <td>${index.quotes.USD.price}</td>
+                <td><NumberFormat displayType={'text'} decimalScale={'2'} value={index.quotes.USD.price} prefix={'$'}></NumberFormat></td>
+                
               </tr>
               
               

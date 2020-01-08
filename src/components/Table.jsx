@@ -34,35 +34,35 @@ class Table extends Component {
           <table className="Table">
           <thead>
               
-       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+       <Tooltip title="Namnet på valutan." arrow placement="top">
               
               <th>Namn 
                   <FontAwesomeIcon icon={faQuestionCircle} /> 
                   </th>
 </Tooltip>
                   
-       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+       <Tooltip title="Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet." arrow placement="top">
                   
                 <th>Börsvärde
                 <FontAwesomeIcon icon={faQuestionCircle} /> 
                 </th>
 </Tooltip>
                 
-       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+       <Tooltip title="Så mycket korstar det att köpa en enhet av valutan." arrow placement="top">
                 
               <th>Pris (USD)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
 </Tooltip>
               
-       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+       <Tooltip title="Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod." arrow placement="top">
               
               <th>Volym (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
 </Tooltip>
               
-       <Tooltip title="Lorem Ipsum Dolor Sit Amet" arrow placement="top">
+       <Tooltip title="Visar om en kryptovaluta har stigit eller sjunkit i värde." arrow placement="top">
               
               <th>Trend (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
@@ -78,7 +78,7 @@ class Table extends Component {
                     <td>{index.Name}</td>
                     <td><NumberFormat value={index.quotes.USD.market_cap} displayType={'text'} thousandSeparator={' '}/></td>
                     
-                    <td>${index.quotes.USD.price}</td>
+                    <td><NumberFormat displayType={'text'} decimalScale={'2'} value={index.quotes.USD.price} prefix={'$'}></NumberFormat></td>
                     <td><NumberFormat value={index.quotes.USD.volume_24h} displayType={'text'} thousandSeparator={' '}/></td>
                     <td onChange={changeColor(index.quotes.USD.percentage_change_24h)} > 
                         <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>

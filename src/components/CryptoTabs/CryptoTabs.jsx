@@ -6,12 +6,15 @@ import {NavLink} from 'react-router-dom';
 import Invest from '../../img/invest.png';
 import Pay from '../../img/pay.png';
 import Wallet from '../../img/wallet.png';
+import { Tooltip } from '@material-ui/core';
 
 
 class CryptoTabs extends Component {
     state = {  }
     render() { 
         return ( 
+
+            
             <Tabs className="Tabs">
                 <TabList className="TabList">
                     <Tab className="TabBtn">Varför ska du bry dig om kryptovalutor?</Tab>
@@ -29,15 +32,11 @@ class CryptoTabs extends Component {
                     <div className="PanelContent">
                         <h2>Varför ska du bry dig om kryptovalutor?</h2>
                         <img className="invest" src={Invest} alt=""/>
-                        <p>Så länge Sveriges lagar säger att kontanter är ett lagligt betalmedel kommer kontanter finnas kvar. Men när Riksbanken undersöker Svenskarnas betalningsvanor 2018 så visar det sig att vi använder mer och mer elektroniska betalningsmedel. Bankkortet använder vi mest att betala med. Om fem till sex år kommer vi nästan vara ett kontantlöst samhälle. 
+                        <p>Riksbanken har gjort en undersökning som visade att Sverige kommer vara ett nästan kontantlöst samhälle om fem år. Att betala med kort istället för kontanter är enkelt och bekvämt för konsumenter och handeln. Banker vill också att vi ska betala mer med kort. Bankerna tjänar mer pengar på kortbetalningar och bankerna slipper köra ut kontanter till alla uttagsautomater i hela landet.  
                                 <br/><br/>
-                            Att betala med kort är enkelt och bekvämt för konsumenter, handeln och banker. Men vi behöver ha tillgång till el, internet och teknik. Bankerna vill att vi betalar mer med kort. Bankerna tjänar mer pengar på kortbetalningar. Stater, banker och kortföretag kontrollerar systemet av pengar i världen idag. Det betyder att de vet exakt hur och när pengar flyttas. 
+                                Stater, banker och kortföretag kontrollerar systemet av pengar i världen idag. Det betyder att de vet exakt hur och när du flyttar dina pengar. Att betala med kryptovalutor är lite som när du betalar med kontanter, det är anonymt. Du behöver heller inte be någon bank om lov. 
                                 <br/><br/>
-                            Att betala med kryptovalutor är lite som när du betalar med kontanter, det är anonymt. Du behöver heller inte be någon bank om lov. 
-                                <br/><br/>
-                            Dagens system av pengar är också centraliserat. Central kontroll på pengar gör det lättare att se till så att ingen spenderar samma pengar på många olika saker samtidigt. Men blockkedje-tekniken har gjort det möjligt att decentralisera pengar och ändå ha koll.
-                                <br/><br/>
-                            Så fördelen med kryptovalutor är att du har rätt till ditt privatliv. Ingen central auktoritet har information om dig i onödan. Ingen annan bestämmer över dina pengar. Du slipper betala onödigt mycket pengar till bankerna, och din betalning kommer fram direkt, även om mottagaren finns på andra sidan jordklotet. 
+                                Så fördelen med kryptovalutor är att du har rätt till ditt privatliv. Ingen central auktoritet har information om dig i onödan. Ingen annan bestämmer över dina pengar. Du slipper betala onödigt mycket pengar till bankerna.
                         </p>
                     </div>  
                 </TabPanel>
@@ -45,18 +44,17 @@ class CryptoTabs extends Component {
                     <div className="PanelContent">
                         <h2>Vad är en kryptovaluta?</h2>
                         <img className="invest" src={Wallet} alt=""/>
-                        
-                        <p>Kryptovalutor är digitala pengar för en global och digital värld. Du skickar pengar från person till person utan att be om lov, utan att bli övervakad, och pengarna kommer fram på en gång.
-                            <br/><br/>
-                            Kryptovalutor är öppet för alla att använda och stater, banker eller företag kontrollerar inte användningen, som de gör med våra vanliga pengar. Kryptovalutor har ingen fysisk form som traditionella kontanter.
-                            <br/><br/>
-                            Idén med en kryptovaluta är att den ska vara fri och privat. Det innebär att den är decentraliserad. Bara du kommer åt dina pengar, ingen annan.
-                            <br/><br/>
-                            Traditionella pengar som kontanter och kortpengar kallar man för Fiatpengar. Fiatpengar har inget eget värde. Staten eller handelsvaror skapar Fiatpengarna och bestämmer värdet av dem.
-                            <br/><br/>
-                            En kryptovaluta skapas istället av krypteringstekniker som reglerar användning och släppdatum. En välprogrammerad krypteringsteknik garanterar värdet och säkerställer att processen är pålitlig.
-                            <br/><br/>
-                            De mest populära kryptovalutorna är bland annat Bitcoin, Ether, Litecoin och Ripple.
+                        <p>
+                        Kryptovalutor är digitala pengar och har ingen fysisk form som traditionella kontanter. Kryptovalutor är öppet för alla att använda och stater, banker eller företag kontrollerar inte användningen, som de gör med våra vanliga pengar. Du skickar pengar från person till person utan att be om lov och utan att bli övervakad.
+                        <br/><br/>
+                        Idén med en kryptovaluta är att den ska vara fri och privat. Det innebär att den är decentraliserad. Bara du kommer åt dina pengar, ingen annan.
+
+                        Traditionella pengar som kontanter och kortpengar kallar man för Fiatpengar. Fiatpengar har inget eget värde. Staten eller handelsvaror skapar Fiatpengarna och bestämmer värdet av dem.
+                        <br/><br/>
+                        En kryptovaluta skapas istället av krypteringstekniker som reglerar användning och släppdatum. En välprogrammerad krypteringsteknik garanterar värdet och säkerställer att processen är pålitlig.
+
+                        De mest populära kryptovalutorna är bland annat Bitcoin, Ether, Litecoin och Ripple.
+
                         </p>
                     </div>  
                 </TabPanel>
@@ -79,17 +77,17 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Varför är kryptovalutor kontroversiellt?</h2>
-                        <p>Fler och fler accepterar kryptovalutor tack vare decentralisering och frihet. Men kryptovalutor har också fått ett kontroversiellt rykte. Banker utmålar gärna kryptovalutor som onödiga risker och att kryptovalutor drar till sig kriminalitet. Andra tycker att kryptovalutor är framtiden. 
+                        <p>
+                            Fler och fler accepterar kryptovalutor tack vare decentralisering och frihet. Men kryptovalutor har också fått ett kontroversiellt rykte. Banker utmålar gärna kryptovalutor som onödiga risker och att kryptovalutor drar till sig kriminalitet. Andra tycker att kryptovalutor är framtiden. 
                             <br/><br/>
                             Riksbanken, som staten ansvarar för, och de privata bankerna, till exempel Handelsbanken, är nära sammankopplade med varandra. De privata bankerna samlar information om oss när vi betalar med kort. De vet var vi är och vad vi handlar. De privata bankerna kan neka kunder eller frysa kunders konton på mycket lösa grunder. I teorin har du lagen på din sida. Men i praktiken har det hänt att kunder har fått kämpa för sina rättigheter. 
                             <br/><br/>
                             Fördelen med kontanter och kryptovalutor är att ingen bestämmer hur du använder pengarna och ingen sparar information om oss. Eftersom kontanter fortsätter minska kan kryptovalutor vara lösningen som värnar vår frihet.
                             <br/><br/>
-                            Här i Sverige har vi haft fred så länge att vi har svårt att se hur utnyttjade vi kan bli när vi lämnar ifrån oss information. Många länder i världen idag har totalitära regimer som utövar ett maktmissbruk och styr hårdhänt över sitt folk. 
+                            Här i Sverige har vi haft fred så länge att vi har svårt att vi kan bli utnyttjade när vi lämnar ifrån oss information. Många länder i världen idag har totalitära regimer som utövar ett maktmissbruk och där folket inte får säga sin mening. 
                             <br/><br/>
-                            Kryptovalutor utmanar både centralbanker och kommersiella banker. Därför har kryptovalutor blivit kontroversiellt. Ingen central auktoritet sitter på din information längre.
+                            Kryptovalutor utmanar både staters centralbanker och kommersiella banker. Därför har kryptovalutor blivit kontroversiellt. Ingen central auktoritet sparar din information längre.
                         </p>
-                        
                     </div>  
                 </TabPanel>
 
@@ -104,8 +102,8 @@ class CryptoTabs extends Component {
                             </thead>
                             <tbody >
                                 <tr>
-                                    <td>Säker</td>
-                                    <td>Spekulativ</td>
+                                    <td>Anonym</td>
+                                    <td>Energikrävande</td>
                                 </tr>
                                 <tr>
                                     <td>Decentraliserad</td>
@@ -113,35 +111,15 @@ class CryptoTabs extends Component {
                                 </tr>
                                 <tr>
                                     <td>Nya tidens pengar</td>
-                                    <td>Experimentell</td>
-                                </tr>
-                                <tr>
-                                    <td>Utan statlig inblandning</td>
-                                    <td>Oanvändbar</td>
-                                </tr>
-                                <tr>
-                                    <td>Anonym</td>
-                                    <td>Galen</td>
+                                    <td>Komplicerad</td>
                                 </tr>
                                 <tr>
                                     <td>Revolutionerande</td>
-                                    <td>Bubbellik</td>
+                                    <td>Oanvändbar</td>
                                 </tr>
                                 <tr>
-                                    <td>Digital</td>
-                                    <td>För kriminella</td>
-                                </tr>
-                                <tr>
-                                    <td>Skydd mot inflation</td>
-                                    <td>Dyr</td>
-                                </tr>
-                                <tr>
-                                    <td>Billig</td>
-                                    <td>Deflationsrisk</td>
-                                </tr>
-                                <tr>
-                                    <td>Enkel</td>
-                                    <td>Komplicerad</td>
+                                    <td>Utan stalig inblanding</td>
+                                    <td>Spekulativ</td>
                                 </tr>
                             </tbody>
                         </table>

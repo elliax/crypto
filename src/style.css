@@ -132,7 +132,7 @@
 
 .content .box {
   padding: 25px;
-  margin: 2vh auto;
+  margin: 3vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +271,7 @@
   font-size: 14px !important;
 }
 
-.tillbaka {
+.btnNav {
   margin-top: 20px;
   padding: 10px;
   color: #313131;
@@ -279,9 +279,12 @@
   border-radius: 50px;
   font-size: 18px;
   border: none;
+  cursor: pointer;
+}
+
+.tillbaka {
   position: absolute;
   left: 30px;
-  cursor: pointer;
 }
 
 .tillbaka .svg-inline--fa {
@@ -298,6 +301,31 @@
   color: #57f1b1;
   -webkit-transform: translateX(-100px);
           transform: translateX(-100px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.fram {
+  position: absolute;
+  right: 30px !important;
+}
+
+.fram .svg-inline--fa {
+  margin-left: 5px;
+}
+
+.fram:hover {
+  background-color: #f7b58b !important;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.fram:hover .svg-inline--fa {
+  color: #57f1b1;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
   -webkit-transition-duration: 2s;

@@ -63,6 +63,7 @@ $text: #ffffff;
       width: 60%;
       border-collapse: collapse;
       margin-bottom: 20px;
+      margin-top: 20px;
 
       th {
         background-color: $color-blue;
@@ -71,8 +72,13 @@ $text: #ffffff;
         font-weight: 100;
       }
       td {
-        width: 50%;
+        width: 40%;
         padding: 5px;
+      }
+
+      td:first-child {
+        width: 20% !important;
+        
       }
 
       tr:nth-child(odd){
