@@ -35,7 +35,7 @@ class CryptoTabs extends Component {
               
                         <h2>Varför ska du bry dig om kryptovalutor?</h2>
                         <img className="invest" src={Invest} alt=""/>
-                        <p>Riksbanken har gjort en undersökning som visade att Sverige kommer vara ett nästan kontantlöst samhälle om fem år. Att betala med kort istället för kontanter är enkelt och bekvämt för konsumenter och handeln. Banker vill också att vi ska betala mer med kort. Bankerna tjänar mer pengar på kortbetalningar och bankerna slipper köra ut kontanter till alla uttagsautomater i hela landet.  
+                        <p>Riksbanken har gjort en undersökning som visade att Sverige kommer vara ett nästan kontantlöst samhälle om fem år. Att betala med kort istället för kontanter är enkelt och bekvämt för konsumenter och handeln. Banker vill också att vi ska betala mer med kort. Bankerna tjänar mer pengar på kortbetalningar och de slipper köra ut kontanter till alla uttagsautomater i hela landet.  
                                 <br/><br/>
                                 Stater, banker och kortföretag kontrollerar systemet av pengar i världen idag. Det betyder att de vet exakt hur och när du flyttar dina pengar. Att betala med kryptovalutor är lite som när du betalar med kontanter, det är anonymt. Du behöver heller inte be någon bank om lov. 
                                 <br/><br/>
