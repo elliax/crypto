@@ -226,21 +226,7 @@ $text: #ffffff;
     }
 }
 
-.coin {
-    width: 40% !important;
-}
 
-.compare {
-    width: 15% !important;
-    margin: 15px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-}
-
-.compare:hover {
-    transform: scale(1.2);
-    transition-duration: 1s;
-}
 
 .tooltip {
     text-decoration: underline #57f1b1 ;
@@ -319,3 +305,37 @@ $text: #ffffff;
    
 }
 
+
+.compareCoin {
+    width: 20vw;
+    
+
+    p {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+}
+
+.coinCon {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+¨
+.coin {
+    width: 40% !important;
+}
+
+.compare {
+    width: 80% !important;
+    margin: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.compare:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}

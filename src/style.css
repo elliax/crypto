@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #root {
   background-color: #313131;
   color: #ffffff;
@@ -247,25 +248,6 @@
   margin-left: 10px;
 }
 
-.coin {
-  width: 40% !important;
-}
-
-.compare {
-  width: 15% !important;
-  margin: 15px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.compare:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
 .tooltip {
   -webkit-text-decoration: underline #57f1b1;
           text-decoration: underline #57f1b1;
@@ -339,5 +321,50 @@
 .invest {
   width: 60%;
   margin: 20px;
+}
+
+.compareCoin {
+  width: 20vw;
+}
+
+.compareCoin p {
+  font-size: 24px;
+  margin-top: -10px;
+}
+
+.coinCon {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+¨
+.coin {
+  width: 40% !important;
+}
+
+.compare {
+  width: 80% !important;
+  margin: 15px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.compare:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 /*# sourceMappingURL=style.css.map */

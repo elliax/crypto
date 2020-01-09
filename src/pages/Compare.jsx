@@ -29,17 +29,22 @@ class Compare extends Component {
       let allCurrency = this.props.cryptoData;
         return ( 
           <div>
+            
             <h1>Jämför kryptovalutor</h1>
             <p>Klicka på en valuta för att jämföra med det tre mest värdefulla valutorna.</p>
+            <div className="coinCon">
               {allCurrency.slice(0, 10).map(index =>(
+              <div className="compareCoin">
+
             <img 
-            className="coin compare" 
+            className="compare" 
             src={require(`../img/coins/${index.Symbol}.png`)} 
             alt={index.Name}
             onClick={() => this.popup(index.Name, index.id)}/>
-                
+                <p> {index.Name} </p>
+                </div>
               ))}
-
+            </div>
                {
           this.state.showPopup? 
           <div className='popup'>  
