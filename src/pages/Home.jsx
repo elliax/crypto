@@ -12,7 +12,7 @@ class Home extends Component {
             <div className="content">
             
                 <div className="box small">
-                    <h1>Vill du få ditt studiebidrag som en kryptovaluta? hej</h1>
+                    <h1>Vill du få ditt studiebidrag som en kryptovaluta?</h1>
                     <p>
                     Använder du kontanter eller Swish idag? Har du alla dina pengar på ett konto och betalar med kort? Isåfall är steget till kryptovaluta inte så långt. Många affärer och företag tar idag emot kryptovalutor som betalning, och det är lätt att växla till sig kryptovalutor på internet.
                     <br/><br/>
