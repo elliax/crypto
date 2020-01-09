@@ -78,6 +78,10 @@ ul {
     height: 75%;
     overflow: scroll;
     overflow-x: hidden;
+
+    span {
+        text-decoration: underline;
+    }
     
     p {
         text-align: left;
@@ -144,9 +148,7 @@ ul {
     
 }
 
-span {
-    text-decoration: underline;
-}
+
 
 .smallImg {
     width: 50%;

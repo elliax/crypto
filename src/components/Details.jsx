@@ -58,8 +58,8 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
 
 
                         </Tooltip>
-                        <td onChange={changeColor(index.quotes.USD.percentage_change_24h)}>
-                            <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
+                        <td >
+                            <div >{index.quotes.USD.percentage_change_24h}%</div>
                         </td>
                     </tr>
                     <tr>

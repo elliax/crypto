@@ -81,10 +81,10 @@ class Table extends Component {
                     <td><NumberFormat displayType={'text'} decimalScale={'2'} value={index.quotes.USD.price} prefix={'$'}></NumberFormat></td>
                     <td><NumberFormat value={index.quotes.USD.volume_24h} displayType={'text'} thousandSeparator={' '}/></td>
                     <td onChange={changeColor(index.quotes.USD.percentage_change_24h)} > 
-                        <div className={posNeg}>{index.quotes.USD.percentage_change_24h}%</div>
+                        <div >{index.quotes.USD.percentage_change_24h}%</div>
                     </td>
                     <td>
-                        <Link className="arrowLink"  to={`/crypto/${index.Symbol}`}> 
+                        <Link className="arrowLink" className={posNeg}  to={`/crypto/${index.Symbol}`}> 
                         <FontAwesomeIcon icon={faArrowRight} />
                         </Link>
                     </td>

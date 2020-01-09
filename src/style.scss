@@ -174,12 +174,14 @@ $text: #ffffff;
     background-color: $color-green;
     color: black !important;
     text-align: center;
+    padding: 5px 15px 5px 15px;
   }
 
   .neg {
     background-color: $color-pink;
     text-align: center;
-      
+    padding: 5px 15px 5px 15px; 
+    color: black !important;
   }
 
   .detail {
@@ -195,7 +197,7 @@ $text: #ffffff;
 
 
   .arrowLink {
-      
+      padding: auto 10px auto 10px;
       color: $text;
       font-size: 20px;
 
@@ -311,8 +313,9 @@ $text: #ffffff;
 }
 
 .invest {
-    width: 80%;
+    width: 60%;
     margin: 20px;
    
    
 }
+

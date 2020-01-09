@@ -197,11 +197,14 @@
   background-color: #57f1b1;
   color: black !important;
   text-align: center;
+  padding: 5px 15px 5px 15px;
 }
 
 .neg {
   background-color: #f7578e;
   text-align: center;
+  padding: 5px 15px 5px 15px;
+  color: black !important;
 }
 
 .detail {
@@ -216,6 +219,7 @@
 }
 
 .arrowLink {
+  padding: auto 10px auto 10px;
   color: #ffffff;
   font-size: 20px;
 }
@@ -333,7 +337,7 @@
 }
 
 .invest {
-  width: 80%;
+  width: 60%;
   margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */
