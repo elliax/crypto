@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import avatar from '../img/AvatarCM.png';
-import Money from '../img/money.png';
+import Money from '../img/finance.png';
 
 
 class Home extends Component {

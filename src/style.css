@@ -329,8 +329,9 @@
 }
 
 .compareCoin p {
-  font-size: 24px;
-  margin-top: -10px;
+  font-size: 20px;
+  margin-top: -15px;
+  opacity: 0.7;
 }
 
 .coinCon {
