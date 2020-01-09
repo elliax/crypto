@@ -4,6 +4,7 @@ import avatar from '../img/AvatarCM.png';
 import Money from '../img/finance.png';
 
 
+
 class Home extends Component {
     state = {  }
     render() { 
