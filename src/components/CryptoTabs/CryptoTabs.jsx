@@ -7,6 +7,13 @@ import {NavLink} from 'react-router-dom';
 import Invest from '../../img/invest.png';
 import Pay from '../../img/pay.png';
 import Wallet from '../../img/wallet.png';
+import HowToUse from '../../img/HowToUse.png';
+import NewIdea from '../../img/new_idea.png';
+import Blockchain from '../../img/blockchain.svg';
+import Transaction from '../../img/transactionChain.svg';
+import BTCBoys from '../../img/bitcoinBoys.svg';
+import Kryptering from '../../img/kryptering.svg';
+import DigitalCurrency from '../../img/digitalCurrency.svg';
 
 
 
@@ -46,7 +53,7 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Vad är en kryptovaluta?</h2>
-                        <img className="invest" src={Wallet} alt=""/>
+                        <img className="smallImg leftImg" src={Kryptering} alt=""/>
                         <p>
                         Kryptovalutor är digitala pengar och har ingen fysisk form som traditionella kontanter. Kryptovalutor är öppet för alla att använda och stater, banker eller företag kontrollerar inte användningen, som de gör med våra vanliga pengar. Du skickar pengar från person till person utan att be om lov och utan att bli övervakad.
                         <br/><br/>
@@ -55,6 +62,7 @@ class CryptoTabs extends Component {
                         <span> decentraliserad. </span>
                         </Tooltip> 
                         Bara du kommer åt dina pengar, ingen annan.
+                        <img className="smallImg rightImg" src={BTCBoys} alt=""/>
 
                         Traditionella pengar som kontanter och kortpengar kallar man för Fiatpengar. Fiatpengar har inget eget värde. Staten eller handelsvaror skapar 
                         <Tooltip title="De flesta valutor i världen idag är fiatpengar, till exempel våra svenska kronor. Det är lagstiftning som utgör grunden för detta penningsystem." arrow placement="top">
@@ -72,22 +80,16 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Hur kan du använda kryptovalutor?</h2>
-                        <img className="invest" src={Pay} alt=""/>
+                        <img className="invest" src={HowToUse} alt=""/>
                         
-                        <p>Idag använder människor kryptovalutor till att:</p>
-                       <ul className="howToUse">
-                           <li>- Köpa och sälja saker på nätet</li>
-                           <li>- Växla till "vanliga" pengar</li>
-                           <li>- Investera</li>
-                           <li>- Spela med</li>
-                           <li>- Som en direkt betalningsmetod mellan användare som inte går att spåra</li>
-                       </ul>
+                        
                         
                     </div>  
                 </TabPanel>
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Varför är kryptovalutor kontroversiellt?</h2>
+                        
                         <p>
                             Fler och fler accepterar kryptovalutor tack vare 
                             <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation." arrow placement="top">
@@ -101,6 +103,8 @@ class CryptoTabs extends Component {
                             <br/><br/>
                             Riksbanken, som staten ansvarar för, och de privata bankerna, till exempel Handelsbanken, är nära sammankopplade med varandra. De privata bankerna samlar information om oss när vi betalar med kort. De vet var vi är och vad vi handlar. De privata bankerna kan neka kunder eller frysa kunders konton på mycket lösa grunder. I teorin har du lagen på din sida. Men i praktiken har det hänt att kunder har fått kämpa för sina rättigheter. 
                             <br/><br/>
+                            <img className="smallImg rightImg" src={NewIdea} alt=""/>
+                            
                             Fördelen med kontanter och kryptovalutor är att ingen bestämmer hur du använder pengarna och ingen sparar information om oss. Eftersom kontanter fortsätter minska kan kryptovalutor vara lösningen som värnar vår frihet.
                             <br/><br/>
                             Här i Sverige har vi haft fred så länge att vi har svårt att vi kan bli utnyttjade när vi lämnar ifrån oss information. Många länder i världen idag har 
@@ -117,7 +121,8 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Fördelar och nackdelar med kryptovalutor</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur, sunt earum quam ad, illo repudiandae assumenda nesciunt reiciendis architecto vitae magnam ducimus minima! Error explicabo aperiam accusamus vel amet.</p>
+                        <img className="invest" src={DigitalCurrency} alt=""/>
+                        
                         <table className="proCon">
                             <thead> 
                             <th>Fördelar</th>
@@ -155,6 +160,8 @@ class CryptoTabs extends Component {
                         Kryptovalutor styrs av algoritmer som inte kan ändras av någon enskild person, organisation eller stat. Krypteringsalgoritmer är unika för varje enskild kryptovaluta.
                         </p>
                         <h3>Kryptering</h3>
+                        <img className="smallImg rightImg" src={Blockchain} alt=""/>
+                        
                         <p>
                         Hos Bitcoin, till exempel, styr en krypteringsteknik som innehåller två olika krypteringsnycklar. En nyckel krypterar och den andra nyckeln dekrypterar.  Krypteringsnyckeln är offentlig, den sprider du fritt. Krypteringsnyckeln är din Bitcoinadress. Dekrypteringsnyckeln är privat. Bara du som äger dekrypteringsnyckeln kan dekryptera meddelanden till Bitcoinadressen. Om du tappar bort din dekrypteringsnyckel förlorar du tillgång till din Bitcoinadress för alltid.
                         </p>
@@ -163,8 +170,11 @@ class CryptoTabs extends Component {
                         Om du vill skicka pengar till din kompis skapar du en transaktion. Din transaktion signerar du med din privata nyckel och publicerar den sen till nätverket. Alla noder i nätverket känner då till transaktionen. När nätverket är överens om transaktionen får din kompis sina pengar.
                         </p>
                         <h3>Blockkedjan</h3>
+                       <img className="smallImg rightImg" src={Transaction} alt=""/>
+                        
                         <p>Istället för en bank som godkänner transaktioner har Bitcoin en blockkedja. Blockkedjan sparar alla transaktioner. Det är nätverket som godkänner transaktioner och sparar dem i ett nytt block. Din kompis får sina pengar när transaktionen ligger i blockkedjan. 
                             <br/><br/>
+                            
                             Nätverket består av miners som tävlar om att skapa nya block. När miners får nya block skapade vinner de en bit bitcoin. Vem som helst kan bli en miner, men du måste ha en hög trovärdighet i nätverket för att lyckas. Den som sköter sig bäst och är snabbast vinner.
                             <br/><br/>
                             Alla nya block pekar mot ett tidigare block vilket skapar en blockkedja.

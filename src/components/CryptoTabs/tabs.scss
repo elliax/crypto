@@ -64,6 +64,10 @@ ul {
             
             min-width: 100%;
         }
+
+        h3 {
+            text-align: left;
+        }
  }
 
  .PanelContent {
@@ -142,4 +146,17 @@ ul {
 
 span {
     text-decoration: underline;
+}
+
+.smallImg {
+    width: 50%;
+    
+}
+
+.rightImg {
+    float: right;
+}
+
+.leftImg {
+    float: left;
 }

@@ -67,6 +67,10 @@ ul {
   min-width: 100%;
 }
 
+.Panel h3 {
+  text-align: left;
+}
+
 .PanelContent {
   width: 65vw;
   position: absolute;
@@ -140,5 +144,17 @@ ul {
 
 span {
   text-decoration: underline;
+}
+
+.smallImg {
+  width: 50%;
+}
+
+.rightImg {
+  float: right;
+}
+
+.leftImg {
+  float: left;
 }
 /*# sourceMappingURL=tabs.css.map */
