@@ -82,7 +82,9 @@ ul {
 }
 
 .PanelContent span {
-  text-decoration: underline;
+  -webkit-text-decoration: underline #57f1b1;
+          text-decoration: underline #57f1b1;
+  font-style: italic;
 }
 
 .PanelContent p {

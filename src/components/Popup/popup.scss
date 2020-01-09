@@ -45,6 +45,17 @@ $text: #ffffff;
     padding: 15px;
     border-radius: 15px;
     border: none;
+    transition-duration: 1s;
+    color: $color-green;
+
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: 1s;
+      background-color: $color-green;
+      color: $color-blue;
+
+      box-shadow: rgba($color: $color-darkgrey, $alpha: 0.2) 3px 3px ;
+    }
   }
 
   .compareCon {

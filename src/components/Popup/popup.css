@@ -41,6 +41,20 @@
   padding: 15px;
   border-radius: 15px;
   border: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  color: #57f1b1;
+}
+
+.quizBtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-color: #57f1b1;
+  color: #210a72;
+  -webkit-box-shadow: rgba(49, 49, 49, 0.2) 3px 3px;
+          box-shadow: rgba(49, 49, 49, 0.2) 3px 3px;
 }
 
 .compareCon {

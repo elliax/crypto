@@ -41,7 +41,7 @@ class CryptoTabs extends Component {
                     <div className="PanelContent">
               
                         <h2>Varför ska du bry dig om kryptovalutor?</h2>
-                        <img className="invest" src={Invest} alt=""/>
+                        <img className="smallImg rightImg" src={Invest} alt=""/>
                         <p>Riksbanken har gjort en undersökning som visade att Sverige kommer vara ett nästan kontantlöst samhälle om fem år. Att betala med kort istället för kontanter är enkelt och bekvämt för konsumenter och handeln. Banker vill också att vi ska betala mer med kort. Bankerna tjänar mer pengar på kortbetalningar och de slipper köra ut kontanter till alla uttagsautomater i hela landet.  
                                 <br/><br/>
                                 Stater, banker och kortföretag kontrollerar systemet av pengar i världen idag. Det betyder att de vet exakt hur och när du flyttar dina pengar. Att betala med kryptovalutor är lite som när du betalar med kontanter, det är anonymt. Du behöver heller inte be någon bank om lov. 
@@ -108,7 +108,7 @@ class CryptoTabs extends Component {
                             Fördelen med kontanter och kryptovalutor är att ingen bestämmer hur du använder pengarna och ingen sparar information om oss. Eftersom kontanter fortsätter minska kan kryptovalutor vara lösningen som värnar vår frihet.
                             <br/><br/>
                             Här i Sverige har vi haft fred så länge att vi har svårt att vi kan bli utnyttjade när vi lämnar ifrån oss information. Många länder i världen idag har 
-                            <Tooltip title="" arrow placement="top">
+                            <Tooltip title="diktatorisk, tyrannisk" arrow placement="top">
                                 <span> totalitära </span>
                             </Tooltip>
                             regimer som utövar ett maktmissbruk och där folket inte får säga sin mening. 

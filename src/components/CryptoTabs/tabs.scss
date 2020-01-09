@@ -80,7 +80,8 @@ ul {
     overflow-x: hidden;
 
     span {
-        text-decoration: underline;
+        text-decoration: underline $color-green;
+        font-style: italic;
     }
     
     p {

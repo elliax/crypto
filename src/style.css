@@ -34,7 +34,7 @@
 }
 
 .Table td {
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .Table .row {
@@ -102,6 +102,8 @@
 
 .header .Menu .link {
   color: black;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .header .Menu .link :hover {
@@ -177,14 +179,26 @@
 
 .cta-button {
   margin-top: 20px;
-  min-width: 90%;
   height: 5vh;
   background-color: #f7578e;
   border-radius: 50px;
   color: #ffffff;
   font-size: 20px;
   border: none;
-  padding: 10px;
+  padding: 10px 40px 10px 40px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.cta-button:hover {
+  background-color: #57f1b1;
+  color: #210a72;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-box-shadow: rgba(49, 49, 49, 0.2) 5px 5px;
+          box-shadow: rgba(49, 49, 49, 0.2) 5px 5px;
 }
 
 .change {
@@ -198,13 +212,11 @@
   background-color: #57f1b1;
   color: black !important;
   text-align: center;
-  padding: 5px 15px 5px 15px;
 }
 
 .neg {
   background-color: #f7578e;
   text-align: center;
-  padding: 5px 15px 5px 15px;
   color: black !important;
 }
 
@@ -220,15 +232,28 @@
 }
 
 .arrowLink {
-  padding: auto 10px auto 10px;
-  color: #ffffff;
+  border-radius: 25px;
+  margin: auto;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
   font-size: 20px;
+  background-color: #f7578e;
+  color: black !important;
 }
 
-.arrowLink :hover {
-  color: #f7578e;
+.arrowLink:hover {
+  background-color: #57f1b1;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.arrowLink:hover .svg-inline--fa {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .detailsTable {
@@ -255,6 +280,8 @@
 
 .MuiTooltip-tooltip {
   font-size: 14px !important;
+  background-color: #57f1b1 !important;
+  color: black !important;
 }
 
 .btnNav {

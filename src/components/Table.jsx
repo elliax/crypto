@@ -84,7 +84,7 @@ class Table extends Component {
                         <div >{index.quotes.USD.percentage_change_24h}%</div>
                     </td>
                     <td>
-                        <Link className="arrowLink" className={posNeg}  to={`/crypto/${index.Symbol}`}> 
+                        <Link className={`arrowLink`}  to={`/crypto/${index.Symbol}`}> 
                         <FontAwesomeIcon icon={faArrowRight} />
                         </Link>
                     </td>
