@@ -141,13 +141,13 @@ ul {
   background-color: #f7b58b;
 }
 
-.howToUse {
-  text-align: left;
-  list-style-type: circle !important;
-}
-
 .smallImg {
   width: 50%;
+}
+
+.BigImg {
+  width: 90% !important;
+  margin-top: -40px;
 }
 
 .rightImg {

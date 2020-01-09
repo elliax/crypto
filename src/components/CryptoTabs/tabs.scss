@@ -142,12 +142,6 @@ ul {
     }
 }
 
-.howToUse {
-    text-align: left;
-    list-style-type: circle !important;
-    
-}
-
 
 
 .smallImg {
@@ -155,6 +149,10 @@ ul {
     
 }
 
+.BigImg {
+    width: 90% !important;
+    margin-top: -40px;
+}
 .rightImg {
     float: right;
 }

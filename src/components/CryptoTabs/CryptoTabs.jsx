@@ -80,7 +80,7 @@ class CryptoTabs extends Component {
                 <TabPanel className="Panel">
                     <div className="PanelContent">
                         <h2>Hur kan du använda kryptovalutor?</h2>
-                        <img className="invest" src={HowToUse} alt=""/>
+                        <img className="invest BigImg" src={HowToUse} alt=""/>
                         
                         
                         
