@@ -58,14 +58,14 @@ class CryptoTabs extends Component {
                         Kryptovalutor är digitala pengar och har ingen fysisk form som traditionella kontanter. Kryptovalutor är öppet för alla att använda och stater, banker eller företag kontrollerar inte användningen, som de gör med våra vanliga pengar. Du skickar pengar från person till person utan att be om lov och utan att bli övervakad.
                         <br/><br/>
                         Idén med en kryptovaluta är att den ska vara fri och privat. Det innebär att den är
-                        <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation." arrow placement="top"> 
+                        <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation."  placement="top"> 
                         <span> decentraliserad. </span>
                         </Tooltip> 
                         Bara du kommer åt dina pengar, ingen annan.
                         <img className="smallImg rightImg" src={BTCBoys} alt=""/>
 
                         Traditionella pengar som kontanter och kortpengar kallar man för Fiatpengar. Fiatpengar har inget eget värde. Staten eller handelsvaror skapar 
-                        <Tooltip title="De flesta valutor i världen idag är fiatpengar, till exempel våra svenska kronor. Det är lagstiftning som utgör grunden för detta penningsystem." arrow placement="top">
+                        <Tooltip title="De flesta valutor i världen idag är fiatpengar, till exempel våra svenska kronor. Det är lagstiftning som utgör grunden för detta penningsystem."  placement="top">
                         <span> Fiatpengarna </span>
                         </Tooltip>
                         och bestämmer värdet av dem.
@@ -92,11 +92,11 @@ class CryptoTabs extends Component {
                         
                         <p>
                             Fler och fler accepterar kryptovalutor tack vare 
-                            <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation." arrow placement="top">
+                            <Tooltip title="Kryptovalutor är decentraliserade valutor som innebär att de inte styrs centralt av någon bank eller nation."  placement="top">
                                 <span> decentralisering </span>
                             </Tooltip>
                              och frihet. Men kryptovalutor har också fått ett 
-                             <Tooltip title="Omdiskuterad, omtvistad." arrow placement="top">
+                             <Tooltip title="Omdiskuterad, omtvistad." placement="top">
                                 <span> kontroversiellt </span>
                              </Tooltip>
                              rykte. Banker utmålar gärna kryptovalutor som onödiga risker och att kryptovalutor drar till sig kriminalitet. Andra tycker att kryptovalutor är framtiden. 
@@ -108,7 +108,7 @@ class CryptoTabs extends Component {
                             Fördelen med kontanter och kryptovalutor är att ingen bestämmer hur du använder pengarna och ingen sparar information om oss. Eftersom kontanter fortsätter minska kan kryptovalutor vara lösningen som värnar vår frihet.
                             <br/><br/>
                             Här i Sverige har vi haft fred så länge att vi har svårt att vi kan bli utnyttjade när vi lämnar ifrån oss information. Många länder i världen idag har 
-                            <Tooltip title="diktatorisk, tyrannisk" arrow placement="top">
+                            <Tooltip title="diktatorisk, tyrannisk" placement="top">
                                 <span> totalitära </span>
                             </Tooltip>
                             regimer som utövar ett maktmissbruk och där folket inte får säga sin mening. 
@@ -146,7 +146,7 @@ class CryptoTabs extends Component {
                                     <td>Oanvändbar</td>
                                 </tr>
                                 <tr>
-                                    <td>Utan stalig inblanding</td>
+                                    <td>Utan statlig inblanding</td>
                                     <td>Spekulativ</td>
                                 </tr>
                             </tbody>

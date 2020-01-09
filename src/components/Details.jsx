@@ -51,7 +51,7 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
             <table className="detailsTable">
                 <tbody>
                     <tr>
-                        <Tooltip title="Visar om en kryptovaluta har stigit eller sjunkit i värde." arrow placement="left">
+                        <Tooltip title="Visar om en kryptovaluta har stigit eller sjunkit i värde."  placement="left">
 
                             <td>
                                 <FontAwesomeIcon icon={faQuestionCircle} /> Förändring (24h): </td>
@@ -63,7 +63,7 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
                         </td>
                     </tr>
                     <tr>
-                        <Tooltip title="Så mycket korstar det att köpa en enhet av valutan." arrow placement="left">
+                        <Tooltip title="Så mycket korstar det att köpa en enhet av valutan." placement="left">
 
                             <td>
                                 <FontAwesomeIcon icon={faQuestionCircle} /> Pris:</td>
@@ -75,7 +75,7 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
                         </td>
                     </tr>
                     <tr>
-                        <Tooltip title="Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet." arrow placement="left">
+                        <Tooltip title="Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet."  placement="left">
 
                             <td>
                                 <FontAwesomeIcon icon={faQuestionCircle} /> Börsvärde:</td>
@@ -85,7 +85,7 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
                             <NumberFormat value={index.quotes.USD.market_cap} displayType={'text'} thousandSeparator={' '}/></td>
                         </tr>
                         <tr>
-                     <Tooltip title="Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod." arrow placement="left">
+                     <Tooltip title="Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod."  placement="left">
                             
                              <td><FontAwesomeIcon icon={faQuestionCircle} />  Volym (24h):</td>
                     </Tooltip>
@@ -95,7 +95,7 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
                               
                         </tr>
                         <tr>
-                     <Tooltip title="Det totala antalet enheter av valutan som existerar." arrow placement="left">
+                     <Tooltip title="Det totala antalet enheter av valutan som existerar."  placement="left">
                             
                              <td><FontAwesomeIcon icon={faQuestionCircle} />  Utbud:</td>
                     </Tooltip>

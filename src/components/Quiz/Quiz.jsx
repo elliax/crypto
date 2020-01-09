@@ -60,6 +60,10 @@ class Quiz extends React.Component {
       });
     }
   }
+
+  reload = () => {
+    window.location.reload();
+  }
   //check answer
   checkAnswer = answer => {
 
@@ -107,12 +111,12 @@ class Quiz extends React.Component {
               <button className="ui button btn">Gå tillbaka till startsidan</button>
                     </Link>
                    
-              <Link to='/quiz'>
-              <button className="ui button btn" >
+              
+              <button className="ui button btn" onClick={this.reload}>
               Testa igen
               <FontAwesomeIcon icon={faRedo} />
               </button>
-              </Link>
+              
                     
            
         </div>

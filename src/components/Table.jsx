@@ -34,35 +34,35 @@ class Table extends Component {
           <table className="Table">
           <thead>
               
-       <Tooltip title="Namnet på valutan." arrow placement="top">
+       <Tooltip title="Namnet på valutan."   placement="top">
               
               <th>Namn 
                   <FontAwesomeIcon icon={faQuestionCircle} /> 
                   </th>
 </Tooltip>
                   
-       <Tooltip title="Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet." arrow placement="top">
+       <Tooltip title="Ett mätvärde som anger marknadsvärdet på en kryptovaluta. Marknadsvärdet representeras av: det nuvarande marknadspriset x cirkulerande utbud (totalt antal mynt på marknaden) = kryptovärdet."  placement="top">
                   
                 <th>Börsvärde
                 <FontAwesomeIcon icon={faQuestionCircle} /> 
                 </th>
 </Tooltip>
                 
-       <Tooltip title="Så mycket korstar det att köpa en enhet av valutan." arrow placement="top">
+       <Tooltip title="Så mycket korstar det att köpa en enhet av valutan."  placement="top">
                 
               <th>Pris (USD)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
 </Tooltip>
               
-       <Tooltip title="Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod." arrow placement="top">
+       <Tooltip title="Volym är det som gör utbyte av pengar. Det är den totala mängden som byts ut under en viss tidsperiod."  placement="top">
               
               <th>Volym (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
               </th>
 </Tooltip>
               
-       <Tooltip title="Visar om en kryptovaluta har stigit eller sjunkit i värde." arrow placement="top">
+       <Tooltip title="Visar om en kryptovaluta har stigit eller sjunkit i värde."  placement="top">
               
               <th>Trend (24h)
               <FontAwesomeIcon icon={faQuestionCircle} /> 
