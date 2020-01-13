@@ -287,8 +287,8 @@
 .btnNav {
   margin-top: 20px;
   padding: 10px;
-  color: #313131;
-  background-color: #d3d3d3;
+  color: black;
+  background-color: #f7578e;
   border-radius: 50px;
   font-size: 18px;
   border: none;
@@ -305,7 +305,7 @@
 }
 
 .tillbaka:hover {
-  background-color: #f7b58b !important;
+  background-color: #57f1b1 !important;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -330,7 +330,7 @@
 }
 
 .fram:hover {
-  background-color: #f7b58b !important;
+  background-color: #57f1b1 !important;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }

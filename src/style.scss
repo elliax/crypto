@@ -267,8 +267,8 @@ $text: #ffffff;
 .btnNav {
     margin-top: 20px;
      padding: 10px;
-      color: $color-darkgrey;
-      background-color: $color-lightgrey;
+      color: black;
+      background-color: $color-pink;
       border-radius: 50px;
       font-size: 18px;
       border: none;
@@ -289,7 +289,7 @@ $text: #ffffff;
 
 .tillbaka:hover {
     
-    background-color: $color-orange !important;
+    background-color: $color-green !important;
     transition-duration: 1s;
     
 
@@ -314,7 +314,7 @@ $text: #ffffff;
 }
 
 .fram:hover {
-    background-color: $color-orange !important;
+    background-color: $color-green !important;
     transition-duration: 1s;
     
 
