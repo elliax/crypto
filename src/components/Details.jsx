@@ -47,7 +47,7 @@ if (value < 0 ){ posNeg="change neg detail" ; } else { posNeg="change pos detail
 
         {thisCurrency.map(index =>(
         <div className="box medium highlight">
-            <img className="coin" src={require(`../img/coins/${index.Symbol}.png`)} alt="" />
+            <img className="coin" src={require(`../img/coins/${index.Symbol}.png`)} alt={`Symbolen eller logotypen för ${index.Name}`} />
             <table className="detailsTable">
                 <tbody>
                     <tr>

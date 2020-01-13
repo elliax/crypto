@@ -23,7 +23,7 @@ class Home extends Component {
                     </Link>
                 </div>
                 <div className="box big">
-                    <img src={Money} alt=""/>
+                    <img src={Money} alt="Illustrtion med en man som står vid en laptop som visar grafer."/>
                 </div>
             </div>
          );
