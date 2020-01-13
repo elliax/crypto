@@ -11,7 +11,7 @@ class Popup extends Component {
                     <h1>Välkommen till quizet!</h1>  
                     <p>Känner du dig redo att testa dina kunskaper om kryptovalutor?</p>
                     <button className="quizBtn" onClick={this.props.closePopup}>Starta Quizet!</button> 
-                    <img className="QuizImg" src={QuizImg} alt=""/> 
+                    <img className="QuizImg" src={QuizImg} alt="Illustration av en laptop med en liten figur tillsamans med frågetecken."/> 
                 </div>  
             </div>  
          );

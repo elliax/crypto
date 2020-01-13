@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import './tabs.css';
 import {NavLink} from 'react-router-dom';
-import Invest from '../../img/invest.png';
+import Invest from '../../img/invest.svg';
 import Pay from '../../img/pay.png';
 import Wallet from '../../img/wallet.png';
 import HowToUse from '../../img/HowToUse.png';
