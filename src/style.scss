@@ -181,19 +181,6 @@ $text: #ffffff;
       margin: auto;
   }
 
-  .pos {
-    background-color: $color-green;
-    color: black !important;
-    text-align: center;
-    
-  }
-
-  .neg {
-    background-color: $color-pink;
-    text-align: center;
-    color: black !important;
-  }
-
   .detail {
       text-align: center;
       width: 15vw;
@@ -213,7 +200,7 @@ $text: #ffffff;
       text-align: center;
       font-size: 20px;
       background-color: $color-pink;
-      color: black !important;
+      color: #fff !important;
   
 
      
@@ -267,7 +254,7 @@ $text: #ffffff;
 .btnNav {
     margin-top: 20px;
      padding: 10px;
-      color: black;
+      color: #fff;
       background-color: $color-pink;
       border-radius: 50px;
       font-size: 18px;

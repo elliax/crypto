@@ -208,18 +208,6 @@
   margin: auto;
 }
 
-.pos {
-  background-color: #57f1b1;
-  color: black !important;
-  text-align: center;
-}
-
-.neg {
-  background-color: #f7578e;
-  text-align: center;
-  color: black !important;
-}
-
 .detail {
   text-align: center;
   width: 15vw;
@@ -238,7 +226,7 @@
   text-align: center;
   font-size: 20px;
   background-color: #f7578e;
-  color: black !important;
+  color: #fff !important;
 }
 
 .arrowLink:hover {
@@ -287,7 +275,7 @@
 .btnNav {
   margin-top: 20px;
   padding: 10px;
-  color: black;
+  color: #fff;
   background-color: #f7578e;
   border-radius: 50px;
   font-size: 18px;
